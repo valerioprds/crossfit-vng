@@ -4,14 +4,14 @@
 
 } */
 
-.leaflet-marker-icon  {
+.leaflet-marker-icon {
   color: red;
 }
 
 .whatsapp-icon {
   position: fixed;
   right: 20px;
-  bottom: 20px;
+  bottom: 40px;
   background-color: #05f805;
   font-size: 40px;
   border-radius: 50%;
@@ -23,6 +23,7 @@
   align-items: center;
   width: 60px;
   height: 60px;
+  z-index: 500;
 
   &:hover {
     background-color: #05dc05;
