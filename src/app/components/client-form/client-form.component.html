@@ -8,7 +8,7 @@
     <p>08800 - Vilanova i la geltrú</p>
   </div>
 </div>
-<div class="container mt-4" style="border: 5px solid green;">
+<div class="container mt-4" style="border: 5px solid green">
   <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="row g-3">
     <h1>Ficha Cliente</h1>
     <div class="col-md-6">
@@ -110,7 +110,7 @@
         >Tarifas <span style="color: red">*</span></label
       >
       <select id="rates" class="form-control" formControlName="rates">
-        <option value="">Seleccionar Tarifa</option>
+        <option value="" disabled>Seleccionar Tarifa</option>
         <option value="Bronze">Bronze 54€ al mes 5 clases + 2 Open box</option>
         <option value="Silver">Silver 66€ al mes 9 clases + 4 Open Box</option>
         <option value="Gold">Gold 82€ al mes 13 clases + 6 Open Box</option>
@@ -125,7 +125,6 @@
         <option value="Dropin16">Drop in 16€ por sesión 1 Clase</option>
         <option value="Dropin12">Drop in 12€ por sesión 1 Open Box</option>
         <option value="kids">Kids 40€</option>
-        <!-- Add more options as needed -->
       </select>
     </div>
     <div class="col-12">
