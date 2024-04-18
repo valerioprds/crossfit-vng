@@ -10,7 +10,7 @@ export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'clases', component: ClassesComponent },
-  { path: 'client-form', component: ClientFormComponent },
+  { path: 'registro-nuevo-cliente', component: ClientFormComponent },
   { path: 'contacto', component: ContactComponent },
   { path: 'tarifas', component: RatesComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },

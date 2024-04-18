@@ -1,1 +1,9 @@
-#map { height: 600px; }
+#map {
+  height: 400px;
+  width: 800px;
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+}
