@@ -1,5 +1,3 @@
-
-
 img {
   border-radius: var(--bs-border-radius) !important;
   width: 100% !important;
@@ -12,4 +10,16 @@ img {
   width: 200px;
   height: 500px;
   object-fit: cover;
+}
+
+.title-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: red;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  padding: 5px;
+  font-size: 50px;
+  font-weight: 700;
 }

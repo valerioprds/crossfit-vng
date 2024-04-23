@@ -1,10 +1,12 @@
 <div class="container">
   <swiper [config]="config">
     <ng-template swiperSlide *ngFor="let slide of slides">
-      <a  > <!-- añador router link aqui -->
+      <a class="slide-container">
+        <div class="title-container">
+          <span class="vertical-title">{{ slide.title }}</span>
+        </div>
         <img [src]="slide.image" alt="foto" class="img-slide"/>
       </a>
     </ng-template>
   </swiper>
 </div>
-

@@ -54,12 +54,17 @@ export class ClassesComponent {
   slides = [
     {
       image: '/assets/images/CF-VNG LOGO versiones-01.jpg',
+      title: 'Workout'
     },
     {
       image: '/assets/images/felipe.jpg',
+      title: 'Workout'
+
     },
     {
       image: '/assets/images/WOD2.jpg',
+      title: 'Workout'
+
     },
   ];
 }
