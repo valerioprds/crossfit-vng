@@ -1,0 +1,64 @@
+/* Estilo general del contenedor */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  background-color: #fff; /* Fondo blanco para el contenedor */
+}
+
+/* Estilo básico de las tarjetas */
+.card {
+  border: 1px solid #ddd; /* Bordes sutiles para definir las tarjetas */
+  transition: transform .3s, box-shadow .3s; /* Suave transición para efectos */
+  background-color: #fff; /* Fondo blanco para las tarjetas */
+}
+
+/* Efecto hover para las tarjetas, con sombra y escalado */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+/* Estilo del encabezado de las tarjetas */
+.card-header {
+  background-color: #d32f2f; /* Rojo intenso para el encabezado */
+  color: white;
+  font-size: 1.2em;
+}
+
+/* Estilo del título de precios en las tarjetas */
+.pricing-card-title {
+  font-size: 2.2rem;
+  color: #333;
+}
+
+/* Estilo de los botones en las tarjetas */
+.btn-outline-primary {
+  border-color: #d32f2f;
+  color: #d32f2f;
+}
+
+.btn-outline-primary:hover {
+  background-color: #d32f2f;
+  color: white;
+}
+
+/* Estilo de las listas dentro de las tarjetas */
+ul.list-unstyled {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+li {
+  padding: 10px 0;
+  color: #666; /* Texto en tono gris oscuro para contraste suave */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .row-cols-lg-5 {
+    flex-direction: column;
+  }
+  .col {
+    margin-bottom: 15px;
+  }
+}
