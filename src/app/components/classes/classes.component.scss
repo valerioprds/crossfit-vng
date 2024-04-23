@@ -1,11 +1,5 @@
-.bg-red {
-  background-color: red !important; /* Use important to ensure override */
-}
-
-.card {
-  margin: 10px; /* Adds space between the cards */
-}
-#cardSwiper
-{
-background-color: black;
+.image-title {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  font-weight: bold;
 }
