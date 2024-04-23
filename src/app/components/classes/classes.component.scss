@@ -1,5 +1,9 @@
-.image-title {
-  writing-mode: vertical-lr;
-  transform: rotate(180deg);
-  font-weight: bold;
+
+
+img {
+  border-radius: var(--bs-border-radius) !important;
+  width: 100% !important;
+  display: block !important;
+  object-fit: cover;
+  padding: 0px;
 }
