@@ -53,18 +53,45 @@ export class ClassesComponent {
 
   slides = [
     {
-      image: '/assets/images/CF-VNG LOGO versiones-01.jpg',
-      title: 'Workout'
+      image: '/assets/images/fotos-clases/CrossFitVNG25.webp',
+      title: 'Crossfit',
     },
     {
-      image: '/assets/images/felipe.jpg',
-      title: 'Workout'
-
+      image: '/assets/images/fotos-clases/CrossFitVNG76.webp',
+      title: 'Strength and conditioning',
     },
     {
-      image: '/assets/images/WOD2.jpg',
-      title: 'Workout'
+      image: '/assets/images/fotos-clases/CrossFitVNG73.webp',
+      title: 'Halterofilia',
+    },
+    {
+      image: '/assets/images/fotos-clases/rings.webp',
+      title: 'Gymnastics',
+    },
+    {
+      image: '/assets/images/fotos-clases/CrossFitVNG89.webp',
+      title: 'Endurance',
+    },
+    {
+      image: '/assets/images/fotos-clases/basic2.webp',
+      title: 'Basics',
+    },
+    {
+      image: '/assets/images/fotos-clases/CrossFitVNG231.webp',
+      title: 'Mobility',
+    },
+    {
+      image: '/assets/images/fotos-clases/pilates.jpeg',
+      title: 'Pilates - OTRA FOTO',
+    },
+    {
+      image: '/assets/images/fotos-clases/pilates.jpeg',
+      title: 'Kids - OTRA FOTO',
+    },
 
+    {
+      image: '/assets/images/fotos-clases/pilates.jpeg',
+      title: 'Synergy WOD',
     },
   ];
 }
