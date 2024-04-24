@@ -1,5 +1,21 @@
-.red-logo {
-  height: 65px;
-  width: 75px;
+$primary-color: #000;
+$secondary-color: #b11f2a;
+$white: #ffffff;
+
+.crossfit-logo {
+  height: 80px;
+  width: 100px;
   border-radius: 50%;
+}
+
+nav {
+  background-color: $primary-color;
+}
+
+a{
+  font-size: 20px;
+}
+
+a:hover{
+  color: $secondary-color ;
 }
