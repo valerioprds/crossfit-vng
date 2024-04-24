@@ -8,13 +8,21 @@ import {
   Validators,
 } from '@angular/forms';
 import { Map, marker, tileLayer } from 'leaflet';
+import emailjs from '@emailjs/browser';
+import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-client-form',
   standalone: true,
   templateUrl: './client-form.component.html',
   styleUrl: './client-form.component.scss',
-  imports: [ReactiveFormsModule, FooterComponent, HeaderComponent],
+  imports: [
+    ReactiveFormsModule,
+    FooterComponent,
+    HeaderComponent,
+    CommonModule,
+  ],
 })
 export class ClientFormComponent implements AfterViewInit {
   ngAfterViewInit(): void {
@@ -33,7 +41,19 @@ export class ClientFormComponent implements AfterViewInit {
     map.fitBounds([[markerItem.getLatLng().lat, markerItem.getLatLng().lng]]);
   }
 
-  contactForm: FormGroup;
+  contactForm: FormGroup = this.fb.group({
+    firstName: '',
+    lastName: '',
+    email: '',
+    dob: '',
+    passportNumber: '',
+    phoneNumber: '',
+    streetAddress: '',
+    postCode: '',
+    city: '',
+    rates: '',
+    termsAccepted: '',
+  });
 
   constructor(private fb: FormBuilder) {
     this.contactForm = this.fb.group({
@@ -46,7 +66,7 @@ export class ClientFormComponent implements AfterViewInit {
       streetAddress: ['', Validators.required],
       postCode: ['', Validators.required],
       city: ['', Validators.required],
-      rates: ['', Validators.required],  // New field
+      rates: ['', Validators.required], // New field
       termsAccepted: [false, Validators.requiredTrue],
     });
   }
@@ -56,19 +76,23 @@ export class ClientFormComponent implements AfterViewInit {
       console.log(this.contactForm.value);
     }
   }
+
+  async send() {
+    emailjs.init('rsiUmPMx9eew9V6y1')
+    let response = await emailjs.send('service_tbbzfaj', 'template_o6ogluj', {
+      firstName: this.contactForm.value.firstName,
+      lastName: this.contactForm.value.lastName,
+      email: this.contactForm.value.email,
+      dob: this.contactForm.value.dob,
+      passportNumber: this.contactForm.value.passportNumber,
+      phoneNumber: this.contactForm.value.phoneNumber,
+      streetAddress: this.contactForm.value.streetAddress,
+      postCode: this.contactForm.value.postCode,
+      city: this.contactForm.value.city,
+      rates: this.contactForm.value.rates,
+      termsAccepted: this.contactForm.value.termsAccepted,
+    });
+    alert('message sent!!!!!');
+    this.contactForm.reset()
+  }
 }
-
-
-/* emailjs.send("service_tbbzfaj","template_o6ogluj",{
-firstName: "mario",
-lastName: "rossi",
-email: "mario@gmail.com",
-dob: "13/02/1989",
-passportNumber: "y3542806s",
-phoneNumber: "634671046",
-streetAddress: "calle olivella 7",
-postCode: "08870",
-city: "sitges",
-rates: "gold",
-termsAccepted: "yes",
-}); */

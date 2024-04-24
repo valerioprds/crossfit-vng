@@ -9,7 +9,8 @@
     </div>
   </div>
   <div class="container mt-4">
-    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="row g-3">
+    <form [formGroup]="contactForm"   action="javascript:void(0)"
+    (submit)="send()" class="row g-3">
       <h1>Ficha Cliente</h1>
       <div class="col-md-6">
         <label for="firstName" class="form-label"
@@ -165,6 +166,7 @@
           Submit
         </button>
       </div>
+      {{ contactForm.value | json }}
     </form>
   </div>
 </div>
