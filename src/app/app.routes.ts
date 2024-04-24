@@ -10,7 +10,7 @@ import { ClasseslistComponent } from './components/classeslist/classeslist.compo
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
-   { path: 'clases', component: ClasseslistComponent },
+  { path: 'clases', component: ClasseslistComponent },
   { path: 'registro-nuevo-cliente', component: ClientFormComponent },
   { path: 'contacto', component: ContactComponent },
   { path: 'tarifas', component: RatesComponent },
