@@ -1,173 +1,155 @@
 <app-header></app-header>
-<div class="container-fluid bg-dark text-white">
-  <div class="container logo-form-container pt-5">
-    <img src="/assets/images/VNG-LOGO.webp" alt="" class="logo-form-img" />
-    <div class="company-details">
-      <p>CROSSFIT VNG S.L Z123456789</p>
-      <p>Carrer del Guix 8</p>
-      <p>08800 - Vilanova i la geltrú</p>
+<div class="container logo-form-container pt-5">
+  <img src="/assets/images/VNG-LOGO.webp" alt="" class="logo-form-img" />
+  <div class="company-details">
+    <p>CROSSFIT VNG S.L Z123456789</p>
+    <p>Carrer del Guix 8</p>
+    <p>08800 - Vilanova i la geltrú</p>
+  </div>
+</div>
+<div class="container mt-4">
+  <form
+    [formGroup]="contactForm"
+    action="javascript:void(0)"
+    (submit)="send()"
+    class="row g-3"
+  >
+    <h1>Ficha Cliente</h1>
+    <div class="col-md-6">
+      <label for="firstName" class="form-label">Nombre <span>*</span> </label>
+      <input
+        type="text"
+        id="firstName"
+        class="form-control"
+        formControlName="firstName"
+      />
     </div>
-  </div>
-  <div class="container mt-4">
-    <form [formGroup]="contactForm"   action="javascript:void(0)"
-    (submit)="send()" class="row g-3">
-      <h1>Ficha Cliente</h1>
-      <div class="col-md-6">
-        <label for="firstName" class="form-label"
-          >Nombre <span style="color: red">*</span>
-        </label>
-        <input
-          type="text"
-          id="firstName"
-          class="form-control"
-          formControlName="firstName"
-        />
-      </div>
-      <div class="col-md-6">
-        <label for="lastName" class="form-label"
-          >Apellido <span style="color: red">*</span>
-        </label>
-        <input
-          type="text"
-          id="lastName"
-          class="form-control"
-          formControlName="lastName"
-        />
-      </div>
-      <div class="col-md-6">
-        <label for="dob" class="form-label"
-          >Fecha de nacimiento <span style="color: red">*</span>
-        </label>
-        <input
-          type="date"
-          id="dob"
-          class="form-control"
-          formControlName="dob"
-        />
-      </div>
-      <div class="col-md-6">
-        <label for="passportNumber" class="form-label"
-          >DNI/NIE/PASAPORTE <span style="color: red">*</span>
-        </label>
-        <input
-          type="text"
-          id="passportNumber"
-          class="form-control"
-          formControlName="passportNumber"
-        />
-      </div>
-      <div class="col-md-6">
-        <label for="phoneNumber" class="form-label"
-          >Teléfono <span style="color: red">*</span>
-        </label>
-        <input
-          type="tel"
-          id="phoneNumber"
-          class="form-control"
-          formControlName="phoneNumber"
-        />
-      </div>
-      <div class="col-md-6">
-        <label for="email" class="form-label"
-          >Email <span style="color: red">*</span>
-        </label>
-        <input
-          type="email"
-          id="email"
-          class="form-control"
-          formControlName="email"
-        />
-      </div>
-      <div class="col-12">
-        <label for="streetAddress" class="form-label"
-          >Dirección <span style="color: red">*</span>
-        </label>
-        <input
-          type="text"
-          id="streetAddress"
-          class="form-control"
-          formControlName="streetAddress"
-        />
-      </div>
-      <div class="col-md-6">
-        <label for="postCode" class="form-label"
-          >Código Postal <span style="color: red">*</span>
-        </label>
-        <input
-          type="text"
-          id="postCode"
-          class="form-control"
-          formControlName="postCode"
-        />
-      </div>
-      <div class="col-md-6">
-        <label for="city" class="form-label"
-          >Localidad <span style="color: red">*</span>
-        </label>
-        <input
-          type="text"
-          id="city"
-          class="form-control"
-          formControlName="city"
-        />
-      </div>
-      <div class="col-md-6">
-        <label for="rates" class="form-label"
-          >Tarifas <span style="color: red">*</span></label
-        >
-        <select id="rates" class="form-control" formControlName="rates">
-          <option value="" disabled>Seleccionar Tarifa</option>
-          <option value="Bronze">
-            Bronze 54€ al mes 5 clases + 2 Open box
-          </option>
-          <option value="Silver">
-            Silver 66€ al mes 9 clases + 4 Open Box
-          </option>
-          <option value="Gold">Gold 82€ al mes 13 clases + 6 Open Box</option>
-          <option value="Platinum">
-            Platinum 96€ al mes 17 clases + 8 Open Box
-          </option>
-          <option value="Diamond">
-            Diamond 104€ al mes clases y open box ilimitado
-          </option>
-          <option value="Bono110">Bono 110€ 10 clases / Open Box</option>
-          <option value="Bono65">Bono 65€ 5 clases / Open Box</option>
-          <option value="Dropin16">Drop in 16€ por sesión 1 Clase</option>
-          <option value="Dropin12">Drop in 12€ por sesión 1 Open Box</option>
-          <option value="kids">Kids 40€</option>
-        </select>
-      </div>
-      <a
-        href="path_to_your_cv_file/tsCsfilename.pdf"
-        download="terminosycondiciones.pdf"
-        >Leer Términos y condiciones</a
-      >
+    <div class="col-md-6">
+      <label for="lastName" class="form-label">Apellido <span>*</span> </label>
+      <input
+        type="text"
+        id="lastName"
+        class="form-control"
+        formControlName="lastName"
+      />
+    </div>
+    <div class="col-md-6">
+      <label for="dob" class="form-label"
+        >Fecha de nacimiento <span>*</span>
+      </label>
+      <input type="date" id="dob" class="form-control" formControlName="dob" />
+    </div>
+    <div class="col-md-6">
+      <label for="passportNumber" class="form-label"
+        >DNI/NIE/PASAPORTE <span>*</span>
+      </label>
+      <input
+        type="text"
+        id="passportNumber"
+        class="form-control"
+        formControlName="passportNumber"
+      />
+    </div>
+    <div class="col-md-6">
+      <label for="phoneNumber" class="form-label"
+        >Teléfono <span>*</span>
+      </label>
+      <input
+        type="tel"
+        id="phoneNumber"
+        class="form-control"
+        formControlName="phoneNumber"
+      />
+    </div>
+    <div class="col-md-6">
+      <label for="email" class="form-label">Email <span>*</span> </label>
+      <input
+        type="email"
+        id="email"
+        class="form-control"
+        formControlName="email"
+      />
+    </div>
+    <div class="col-12">
+      <label for="streetAddress" class="form-label"
+        >Dirección <span>*</span>
+      </label>
+      <input
+        type="text"
+        id="streetAddress"
+        class="form-control"
+        formControlName="streetAddress"
+      />
+    </div>
+    <div class="col-md-6">
+      <label for="postCode" class="form-label"
+        >Código Postal <span>*</span>
+      </label>
+      <input
+        type="text"
+        id="postCode"
+        class="form-control"
+        formControlName="postCode"
+      />
+    </div>
+    <div class="col-md-6">
+      <label for="city" class="form-label">Localidad <span>*</span> </label>
+      <input
+        type="text"
+        id="city"
+        class="form-control"
+        formControlName="city"
+      />
+    </div>
+    <div class="col-md-6">
+      <label for="rates" class="form-label">Tarifas <span>*</span></label>
+      <select id="rates" class="form-control" formControlName="rates">
+        <option value="" disabled>Seleccionar Tarifa</option>
+        <option value="Bronze">Bronze 54€ al mes 5 clases + 2 Open box</option>
+        <option value="Silver">Silver 66€ al mes 9 clases + 4 Open Box</option>
+        <option value="Gold">Gold 82€ al mes 13 clases + 6 Open Box</option>
+        <option value="Platinum">
+          Platinum 96€ al mes 17 clases + 8 Open Box
+        </option>
+        <option value="Diamond">
+          Diamond 104€ al mes clases y open box ilimitado
+        </option>
+        <option value="Bono110">Bono 110€ 10 clases / Open Box</option>
+        <option value="Bono65">Bono 65€ 5 clases / Open Box</option>
+        <option value="Dropin16">Drop in 16€ por sesión 1 Clase</option>
+        <option value="Dropin12">Drop in 12€ por sesión 1 Open Box</option>
+        <option value="kids">Kids 40€</option>
+      </select>
+    </div>
+    <a
+      href="path_to_your_cv_file/tsCsfilename.pdf"
+      download="terminosycondiciones.pdf"
+      >Leer Términos y condiciones</a
+    >
 
-      <div class="col-12">
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            id="termsAccepted"
-            formControlName="termsAccepted"
-          />
-          <label class="form-check-label" for="termsAccepted">
-            He leído y acepto las condiciones generales del contrato.
-            <span style="color: red">*</span>
-          </label>
-        </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          id="termsAccepted"
+          formControlName="termsAccepted"
+        />
+        <label class="form-check-label" for="termsAccepted">
+          He leído y acepto las condiciones generales del contrato.
+          <span>*</span>
+        </label>
       </div>
-      <div class="col-12">
-        <button
-          type="submit"
-          class="btn btn-primary"
-          [disabled]="!contactForm.valid"
-        >
-          Submit
-        </button>
-      </div>
-      {{ contactForm.value | json }}
-    </form>
-  </div>
+    </div>
+    <div class="col-12">
+      <button
+        type="submit"
+        class="btn btn-primary"
+        [disabled]="!contactForm.valid"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
 </div>
 <app-footer></app-footer>
