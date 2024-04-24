@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from "../header/header.component";
 import { FooterComponent } from "../footer/footer.component";
 import { RatesComponent } from "../rates/rates.component";
-import { ClassesComponent } from "../classes/classes.component";
+import { ClassesComponent } from "../classes/classes-slider.component";
 
 @Component({
     selector: 'app-home',

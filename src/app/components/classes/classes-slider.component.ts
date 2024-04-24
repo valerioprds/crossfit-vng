@@ -9,17 +9,18 @@ import SwiperCore, {
   Swiper,
 } from 'swiper';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 @Component({
   selector: 'app-classes',
   standalone: true,
-  imports: [SwiperModule, CommonModule],
-  templateUrl: './classes.component.html',
-  styleUrl: './classes.component.scss',
+  imports: [SwiperModule, CommonModule, RouterModule],
+  templateUrl: './classes-slider.component.html',
+  styleUrl: './classes-slider.component.scss',
 })
-export class ClassesComponent {
+export class ClassesSliderComponent {
   config: SwiperOptions = {
     loop: true,
     slidesPerView: 3,
