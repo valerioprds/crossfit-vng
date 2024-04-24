@@ -57,3 +57,18 @@ export class ClientFormComponent implements AfterViewInit {
     }
   }
 }
+
+
+/* emailjs.send("service_tbbzfaj","template_o6ogluj",{
+firstName: "mario",
+lastName: "rossi",
+email: "mario@gmail.com",
+dob: "13/02/1989",
+passportNumber: "y3542806s",
+phoneNumber: "634671046",
+streetAddress: "calle olivella 7",
+postCode: "08870",
+city: "sitges",
+rates: "gold",
+termsAccepted: "yes",
+}); */
