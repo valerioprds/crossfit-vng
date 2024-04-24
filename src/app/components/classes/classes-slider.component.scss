@@ -24,7 +24,27 @@ img {
   font-weight: 600
 }
 
+.hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FFF;
+  font-size: 24px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  text-align: center;
+  width: 100%; /* Ensures text is centered properly */
+}
 
+/* Hover effects */
+.slide-container:hover .img-slide {
+  opacity: 0.3; /* Fade the image */
+}
+
+.slide-container:hover .hover-text {
+  opacity: 1; /* Show the text */
+}
 
 
 @keyframes slideInRight {
