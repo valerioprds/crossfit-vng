@@ -90,7 +90,7 @@ export class ClientFormComponent implements AfterViewInit {
       postCode: this.contactForm.value.postCode,
       city: this.contactForm.value.city,
       rates: this.contactForm.value.rates,
-      termsAccepted: this.contactForm.value.termsAccepted,
+      termsAccepted: 'teminos aceptados',
     });
     alert('message sent!!!!!');
     this.contactForm.reset()
