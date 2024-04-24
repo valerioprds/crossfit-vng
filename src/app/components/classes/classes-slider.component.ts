@@ -14,7 +14,7 @@ import { RouterModule } from '@angular/router';
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 @Component({
-  selector: 'app-classes',
+  selector: 'app-classes-slider',
   standalone: true,
   imports: [SwiperModule, CommonModule, RouterModule],
   templateUrl: './classes-slider.component.html',

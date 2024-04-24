@@ -5,11 +5,12 @@ import { ClientFormComponent } from './components/client-form/client-form.compon
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { RatesComponent } from './components/rates/rates.component';
+import { ClasseslistComponent } from './components/classeslist/classeslist.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
- /*  { path: 'clases', component: ClassesSliderComponent }, */
+   { path: 'clases', component: ClasseslistComponent },
   { path: 'registro-nuevo-cliente', component: ClientFormComponent },
   { path: 'contacto', component: ContactComponent },
   { path: 'tarifas', component: RatesComponent },
