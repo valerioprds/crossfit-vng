@@ -57,15 +57,15 @@ export class ClientFormComponent implements AfterViewInit {
 
   constructor(private fb: FormBuilder) {
     this.contactForm = this.fb.group({
-      firstName: ['', Validators.required],
-      lastName: ['', Validators.required],
+      firstName: ['', [Validators.required, Validators.minLength(4)]],
+      lastName: ['', [Validators.required, Validators.minLength(4)]],
       dob: ['', Validators.required],
-      passportNumber: ['', Validators.required],
-      phoneNumber: ['', Validators.required],
+      passportNumber: ['', [Validators.required, Validators.minLength(8)]],
+      phoneNumber: ['', [Validators.required, Validators.minLength(9)]],
       email: ['', [Validators.required, Validators.email]],
-      streetAddress: ['', Validators.required],
-      postCode: ['', Validators.required],
-      city: ['', Validators.required],
+      streetAddress: ['', [Validators.required, Validators.minLength(9)]],
+      postCode: ['', [Validators.required, Validators.minLength(5)]],
+      city: ['', [Validators.required, Validators.minLength(5)]],
       rates: ['', Validators.required], // New field
       termsAccepted: [false, Validators.requiredTrue],
     });
@@ -78,7 +78,7 @@ export class ClientFormComponent implements AfterViewInit {
   }
 
   async send() {
-    emailjs.init('rsiUmPMx9eew9V6y1')
+    emailjs.init('rsiUmPMx9eew9V6y1');
     let response = await emailjs.send('service_tbbzfaj', 'template_o6ogluj', {
       firstName: this.contactForm.value.firstName,
       lastName: this.contactForm.value.lastName,
@@ -93,6 +93,6 @@ export class ClientFormComponent implements AfterViewInit {
       termsAccepted: 'teminos aceptados',
     });
     alert('message sent!!!!!');
-    this.contactForm.reset()
+    this.contactForm.reset();
   }
 }
