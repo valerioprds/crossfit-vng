@@ -1,0 +1,30 @@
+h2,
+h3 {
+  color: var(--secondary-color); /* Red titles */
+}
+.container {
+ // border: 6px solid yellow;
+  max-width: 1000px;
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.img-fluid {
+  border-radius: 0.25rem;
+  height: 340px;
+  width: 400px;
+  object-fit: cover;
+}
+
+.shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional styling to enhance visual hierarchy and readability */
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
