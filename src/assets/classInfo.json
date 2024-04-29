@@ -1,16 +1,25 @@
 {
   "sections": [
     {
-      "title": "Crossift",
+      "id": "crossfit",
+      "title": "CrossFit",
       "description": "Sumérgete en el núcleo de la fuerza y el fitness con nuestra clase insignia de CrossFit. Aquí, desafiamos cada músculo con WODs (Workout of the Day) que fusionan levantamiento, cardio y gimnasia. Perfecto para quienes buscan transformarse completamente en un ambiente dinámico y motivador.",
       "image": "/assets/images/felipe.jpg",
-      "altText": "clase de VNG CrossFit"
+      "imageAlt": "clase de VNG CrossFit"
     },
     {
+      "id": "strength-conditioning",
       "title": "Strength and Conditioning",
       "description": "Esculpe tu cuerpo y eleva tu rendimiento con nuestra clase de Fuerza y Acondicionamiento. Diseñada para construir músculo y mejorar la resistencia, esta clase es ideal tanto para atletas como para aficionados serios del fitness que aspiran a superar sus límites.",
       "image": "/assets/images/felipe.jpg",
-      "altText": "CrossFit Schedule"
+      "imageAlt": "CrossFit Schedule"
+    },
+    {
+      "id": "endurance",
+      "title": "Endurance",
+      "description": "Sumérgete en el núcleo de la fuerza y el fitness con nuestra clase insignia de CrossFit. Aquí, desafiamos cada músculo con WODs (Workout of the Day) que fusionan levantamiento, cardio y gimnasia. Perfecto para quienes buscan transformarse completamente en un ambiente dinámico y motivador.",
+      "image": "/assets/images/felipe.jpg",
+      "imageAlt": "clase de VNG CrossFit"
     }
   ]
 }
