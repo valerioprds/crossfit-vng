@@ -3,7 +3,6 @@ h3 {
   color: var(--secondary-color); /* Red titles */
 }
 .container {
-  border: 6px solid yellow;
   max-width: 1000px;
 }
 
@@ -12,10 +11,10 @@ h3 {
   font-weight: 300;
 }
 
-.img-fluid {
+.img-classes {
   border-radius: 0.25rem;
-  height: 100%;
-  width: auto;
+  height: 400px;
+  width: 500px;
   object-fit: cover;
 }
 
