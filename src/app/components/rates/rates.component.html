@@ -2,66 +2,17 @@
 
 <div class="container mt-5">
   <div class="row">
-    <div class="col-md-4 mb-3">
+    <div class="col-md-4 mb-3" *ngFor="let rate  of rates">
       <div class="card">
-        <div class="card-header">Basic</div>
+        <div class="card-header">{{ rate.name }}</div>
         <div class="card-price">
-          $0
-          <span class="card-subtext">No card Required</span>
+          {{ rate.price }}
+          <span class="card-subtext">{{ rate.subtext }}</span>
         </div>
         <ul class="features">
-          <li>Up to 3 users</li>
-          <li>Access to Remote files</li>
-          <li>Community Contribution</li>
+          <li *ngFor="let feature of rate.features">{{ feature }}</li>
         </ul>
-        <button class="btn btn-block">Current Plan</button>
-      </div>
-    </div>
-
-    <div class="col-md-4 mb-3">
-      <div class="card">
-        <div class="card-header">Basic</div>
-        <div class="card-price">
-          $0
-          <span class="card-subtext">No card Required</span>
-        </div>
-        <ul class="features">
-          <li>Up to 3 users</li>
-          <li>Access to Remote files</li>
-          <li>Community Contribution</li>
-        </ul>
-        <button class="btn btn-block">Current Plan</button>
-      </div>
-    </div>
-
-    <div class="col-md-4 mb-3">
-      <div class="card">
-        <div class="card-header">Basic</div>
-        <div class="card-price">
-          $0
-          <span class="card-subtext">No card Required</span>
-        </div>
-        <ul class="features">
-          <li>Up to 3 users</li>
-          <li>Access to Remote files</li>
-          <li>Community Contribution</li>
-        </ul>
-        <button class="btn btn-block">Current Plan</button>
-      </div>
-    </div>
-    <div class="col-md-4 mb-3">
-      <div class="card">
-        <div class="card-header">Basic</div>
-        <div class="card-price">
-          $0
-          <span class="card-subtext">No card Required</span>
-        </div>
-        <ul class="features">
-          <li>Up to 3 users</li>
-          <li>Access to Remote files</li>
-          <li>Community Contribution</li>
-        </ul>
-        <button class="btn btn-block">Current Plan</button>
+        <button class="btn btn-block">Contáctanos</button>
       </div>
     </div>
   </div>

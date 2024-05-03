@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Basic",
+    "price": "$11111110",
+    "subtext": "mes",
+    "features": [
+      "Up to 3 users",
+      "Access to Remote files",
+      "Community Contribution"
+    ],
+    "buttonText": "Current Plan"
+  },
+  {
+    "name": "Basic",
+    "price": "$0",
+    "subtext": "mes",
+    "features": [
+      "Up to 3 users",
+      "Access to Remote files",
+      "Community Contribution"
+    ],
+    "buttonText": "Current Plan"
+  },
+  {
+    "name": "Basic",
+    "price": "$0",
+    "subtext": "mes",
+    "features": [
+      "Up to 3 users",
+      "Access to Remote files",
+      "Community Contribution"
+    ],
+    "buttonText": "Current Plan"
+  }
+]
