@@ -1,35 +1,68 @@
 [
   {
-    "name": "Basic",
-    "price": "$11111110",
-    "subtext": "mes",
-    "features": [
-      "Up to 3 users",
-      "Access to Remote files",
-      "Community Contribution"
-    ],
-    "buttonText": "Current Plan"
+    "name": "Bronze ",
+    "price": "54 eur",
+    "subtext": "al mes",
+    "features": ["5 clases", "2 Open Box"]
   },
   {
-    "name": "Basic",
-    "price": "$0",
-    "subtext": "mes",
-    "features": [
-      "Up to 3 users",
-      "Access to Remote files",
-      "Community Contribution"
-    ],
-    "buttonText": "Current Plan"
+    "name": "Silver",
+    "price": "66 eur",
+    "subtext": "al mes",
+    "features": ["9 clases", "4 Open Box"]
   },
   {
-    "name": "Basic",
-    "price": "$0",
-    "subtext": "mes",
-    "features": [
-      "Up to 3 users",
-      "Access to Remote files",
-      "Community Contribution"
-    ],
-    "buttonText": "Current Plan"
+    "name": "Gold",
+    "price": "82 eur",
+    "subtext": "al mes",
+    "features": ["13 clases", "6 Open Box"]
+  },
+  {
+    "name": "Platinum",
+    "price": "96 eur",
+    "subtext": "al mes",
+    "features": ["17 clases", "8 Open Box"]
+  },
+  {
+    "name": "Platinum",
+    "price": "96 eur",
+    "subtext": "al mes",
+    "features": ["17 clases", "8 Open Box"]
+  },
+  {
+    "name": "Diamond",
+    "price": "104 eur",
+    "subtext": "al mes",
+    "features": ["clases ilimitadas", "Open Box ilimitado"]
+  },
+  {
+    "name": "Bono 110",
+    "price": "110 eur",
+    "subtext": "al mes",
+    "features": ["10 clases / Open Box"]
+  },
+  {
+    "name": "Bono 65",
+    "price": "65 eur",
+    "subtext": "al mes",
+    "features": ["5 clases / Open Box"]
+  },
+  {
+    "name": "Drop In 16",
+    "price": "16 eur",
+    "subtext": "al mes",
+    "features": ["1 Clase cualquiera"]
+  },
+  {
+    "name": "Drop In 12",
+    "price": "16 eur",
+    "subtext": "al mes",
+    "features": ["1 sesion de Openbox"]
+  },
+  {
+    "name": "Kids",
+    "price": "40 eur",
+    "subtext": "al mes",
+    "features": ["1 sesion a la semana"]
   }
 ]

@@ -10,7 +10,10 @@
           <span class="card-subtext">{{ rate.subtext }}</span>
         </div>
         <ul class="features">
-          <li *ngFor="let feature of rate.features">{{ feature }}</li>
+          <li *ngFor="let feature of rate.features">
+            <i class="fa-solid fa-check" style="color: #11ff00"></i>
+            {{ feature }}
+          </li>
         </ul>
         <button
           class="btn btn-block"
