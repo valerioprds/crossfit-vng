@@ -2,7 +2,7 @@
 
 <div class="container mt-5">
   <div class="row">
-    <div class="col-md-4 mb-3" *ngFor="let rate  of rates">
+    <div class="col-md-4 mb-3" *ngFor="let rate of rates">
       <div class="card">
         <div class="card-header">{{ rate.name }}</div>
         <div class="card-price">
@@ -12,7 +12,12 @@
         <ul class="features">
           <li *ngFor="let feature of rate.features">{{ feature }}</li>
         </ul>
-        <button class="btn btn-block">Contáctanos</button>
+        <button
+          class="btn btn-block"
+          [routerLink]="['/registro-nuevo-cliente']"
+        >
+          ¡Apúntate!
+        </button>
       </div>
     </div>
   </div>

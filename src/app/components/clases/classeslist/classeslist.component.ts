@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 import { DataService } from '../../../services/data.service';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-import { ClassSection, ClassInfo } from '../../../models/class-info.model.ts';
+import { ClassSection, ClassInfo } from '../../../models/class-info.interface.ts';
 
 
 @Component({

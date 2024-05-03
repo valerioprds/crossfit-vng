@@ -3,16 +3,18 @@ import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { Rates } from '../../models/rates-info.interface';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-rates',
   standalone: true,
   templateUrl: './rates.component.html',
   styleUrl: './rates.component.scss',
-  imports: [HeaderComponent, FooterComponent, HttpClientModule, CommonModule],
+  imports: [HeaderComponent, RouterModule, FooterComponent, HttpClientModule, CommonModule],
 })
 export class RatesComponent implements OnInit {
-  rates: any[] = [];
+  rates: Rates[] = [];
 
   constructor(private http: HttpClient) {}
   ngOnInit(): void {
@@ -20,7 +22,7 @@ export class RatesComponent implements OnInit {
   }
 
   loadRates() {
-    this.http.get<any[]>('/assets/rates.json').subscribe((data) => {
+    this.http.get<Rates[]>('/assets/rates.json').subscribe((data) => {
       this.rates = data;
     });
   }

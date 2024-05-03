@@ -1,4 +1,3 @@
-// src/app/shared/models/class-info.model.ts
 export interface ClassSection {
   id: string;
   title: string;
