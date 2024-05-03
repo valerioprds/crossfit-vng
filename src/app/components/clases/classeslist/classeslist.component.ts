@@ -14,7 +14,7 @@ import { ClassSection, ClassInfo } from '../../../models/class-info.model.ts';
     standalone: true,
     templateUrl: './classeslist.component.html',
     styleUrl: './classeslist.component.scss',
-    imports: [HeaderComponent, FooterComponent, CommonModule , HttpClientModule]
+    imports: [HeaderComponent, FooterComponent, CommonModule , HttpClientModule, ]
 })
 export class ClasseslistComponent implements OnInit {
 

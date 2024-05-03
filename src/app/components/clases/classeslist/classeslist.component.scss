@@ -1,6 +1,6 @@
 h2,
 h3 {
-  color: var(--secondary-color); /* Red titles */
+  color: var(--secondary-color);
 }
 .container {
   max-width: 1000px;
@@ -16,6 +16,13 @@ h3 {
   height: 400px;
   width: 500px;
   object-fit: cover;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.img-classes:hover {
+  transform: scale(1.05);
+  //box-shadow: 0 8px 15px rgba(255, 255, 255, 0.3);
+
 }
 
 .shadow {
@@ -26,4 +33,21 @@ h3 {
 p {
   font-size: 1rem;
   line-height: 1.5;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.row {
+  animation: fadeIn 0.8s ease-out;
+  opacity: 0; // Initial state is invisible
+  animation-fill-mode: forwards; // Keeps the element at the state of animation end
 }
