@@ -3,23 +3,86 @@
     {
       "id": "crossfit",
       "title": "CrossFit",
-      "description": "Sumérgete en el núcleo de la fuerza y el fitness con nuestra clase insignia de CrossFit. Aquí, desafiamos cada músculo con WODs (Workout of the Day) que fusionan levantamiento, cardio y gimnasia. Perfecto para quienes buscan transformarse completamente en un ambiente dinámico y motivador.",
+      "description": "Este programa integral combina disciplinas como levantamiento de pesas, atletismo y gimnasia para ofrecer un entrenamiento completo que mejora la fuerza, la agilidad, la resistencia y la flexibilidad. Cada sesión incluye un calentamiento, un segmento de habilidad técnica, el entrenamiento del día (WOD), y un enfriamiento, asegurando un desarrollo equilibrado de todas las capacidades físicas.",
       "image": "/assets/images/felipe.jpg",
-      "imageAlt": "clase de VNG CrossFit"
+      "imageAlt": "CrossFit Class"
     },
     {
       "id": "strength-conditioning",
       "title": "Strength and Conditioning",
-      "description": "Esculpe tu cuerpo y eleva tu rendimiento con nuestra clase de Fuerza y Acondicionamiento. Diseñada para construir músculo y mejorar la resistencia, esta clase es ideal tanto para atletas como para aficionados serios del fitness que aspiran a superar sus límites.",
+      "description": "Diseñado para incrementar la fuerza muscular y la capacidad cardiovascular, este curso utiliza una mezcla de levantamientos de pesas, ejercicios de cardio y técnicas de movimiento funcional. A través de rutinas estructuradas, los participantes trabajan hacia la mejora de su rendimiento físico general y la prevención de lesiones.",
       "image": "/assets/images/felipe.jpg",
-      "imageAlt": "CrossFit Schedule"
+      "imageAlt": "Strength and Conditioning Class"
+    },
+    {
+      "id": "weightlifting",
+      "title": "Halterofilia",
+      "description": "Especialmente enfocada en el levantamiento de pesas olímpico, esta clase enseña y perfecciona técnicas para ejecutar el snatch y el clean and jerk. A través de un enfoque meticuloso en la forma y la técnica, los atletas mejoran su fuerza explosiva y su capacidad de ejecución bajo presión.",
+      "image": "/assets/images/felipe.jpg",
+      "imageAlt": "Weightlifting Class"
+    },
+    {
+      "id": "gymnastics",
+      "title": "Gymnastics",
+      "description": "Esta clase está diseñada para mejorar habilidades específicas de gimnasia como dominadas, dips, handstands y movimientos de equilibrio. Los participantes trabajan en controlar su propio cuerpo a través de ejercicios que aumentan la fuerza, la flexibilidad, y la coordinación, esenciales para el éxito en numerosos deportes y actividades físicas.",
+      "image": "/assets/images/fotos-clases/CrossFitVNG-121.webp",
+      "imageAlt": "Gymnastics Class"
     },
     {
       "id": "endurance",
       "title": "Endurance",
-      "description": "Sumérgete en el núcleo de la fuerza y el fitness con nuestra clase insignia de CrossFit. Aquí, desafiamos cada músculo con WODs (Workout of the Day) que fusionan levantamiento, cardio y gimnasia. Perfecto para quienes buscan transformarse completamente en un ambiente dinámico y motivador.",
+      "description": "Centrándose en la resistencia cardiovascular, esta clase utiliza actividades de larga duración como correr, remar y ciclismo para incrementar la capacidad aeróbica y anaeróbica de los atletas. A través de entrenamientos progresivos, los participantes pueden mejorar su resistencia, recuperación y capacidad para realizar esfuerzos sostenidos.",
       "image": "/assets/images/felipe.jpg",
-      "imageAlt": "clase de VNG CrossFit"
+      "imageAlt": "Endurance Class"
+    },
+    {
+      "id": "basics",
+      "title": "Basics",
+      "description": "Perfecta para principiantes, esta clase introduce los fundamentos del CrossFit, incluyendo técnicas de levantamiento de pesas, movimientos básicos de gimnasia y términos comunes usados en el CrossFit. Los nuevos atletas aprenden a realizar ejercicios de manera segura y eficaz para maximizar su entrenamiento mientras minimizan el riesgo de lesión.",
+      "image": "/assets/images/felipe.jpg",
+      "imageAlt": "Basics Class"
+    },
+    {
+      "id": "mobility",
+      "title": "Mobility",
+      "description": "Esta clase se centra en mejorar el rango de movimiento y la flexibilidad general a través de estiramientos dirigidos, trabajo con rodillos de espuma y técnicas de liberación miofascial. Mejorar la movilidad ayuda a los atletas a ejecutar movimientos con mayor eficiencia y a reducir el riesgo de lesiones durante actividades físicas intensas.",
+      "image": "/assets/images/felipe.jpg",
+      "imageAlt": "Mobility Class"
+    },
+    {
+      "id": "pilates-hiit",
+      "title": "Pilates HIIT",
+      "description": "Una fusión energética de Pilates y entrenamiento interválico de alta intensidad (HIIT), esta clase desafía tanto el cuerpo como la mente. Mejora el control del core, la resistencia muscular, y la capacidad cardiovascular, todo en una sesión que también enfatiza la precisión y la eficiencia del movimiento.",
+      "image": "/assets/images/felipe.jpg",
+      "imageAlt": "Pilates HIIT Class"
+    },
+    {
+      "id": "kids",
+      "title": "Kids",
+      "description": "Dirigida a niños, esta clase combina fundamentos de fitness con juegos y actividades diseñadas para fomentar un estilo de vida activo desde una edad temprana. Los niños aprenden habilidades motoras básicas, cooperación y trabajo en equipo, todo en un ambiente divertido y seguro.",
+      "image": "/assets/images/felipe.jpg",
+      "imageAlt": "Kids Class"
+    },
+    {
+      "id": "synergy-wod",
+      "title": "Synergy WOD",
+      "description": "Este entrenamiento combinado utiliza diferentes modalidades para ofrecer un programa de ejercicios equilibrado. Las sesiones son dinámicas y variadas, asegurando que todos los aspectos del fitness son trabajados, desde la fuerza hasta la movilidad, lo que resulta en una mejora integral del rendimiento físico.",
+      "image": "/assets/images/felipe.jpg",
+      "imageAlt": "Synergy WOD Class"
+    },
+    {
+      "id": "train-with-coach",
+      "title": "Entrena con tu Coach",
+      "description": "Esta opción de entrenamiento personalizado permite a los atletas trabajar directamente con un entrenador para enfocarse en objetivos específicos. Es ideal para aquellos que buscan atención personalizada y estrategias adaptadas a sus necesidades individuales de fitness y salud.",
+      "image": "/assets/images/felipe.jpg",
+      "imageAlt": "Train with Coach"
+    },
+    {
+      "id": "oposiciones",
+      "title": "Oposiciones",
+      "description": "Preparada específicamente para aquellos que buscan superar las pruebas físicas de oposiciones para cuerpos y fuerzas de seguridad. Los entrenamientos se diseñan para cumplir con los criterios específicos de las pruebas, enfocándose en la resistencia, la fuerza y la agilidad requeridas.",
+      "image": "/assets/images/felipe.jpg",
+      "imageAlt": "Oposiciones Class"
     }
   ]
 }
