@@ -1,12 +1,12 @@
 <app-header></app-header>
 
-<h2 class="mb-3 text-center">Descubre nuestras Clases de CrossFit</h2>
+<h2 class="my-4 text-center">Descubre nuestras Clases de CrossFit</h2>
 
 <div class="container my-5 text-white">
   <div
     *ngFor="let section of sections; let i = index"
     class="row align-items-center mt-5"
-   
+
   >
     <!-- Conditionally switch order based on odd/even index -->
     <div [ngClass]="i % 2 === 0 ? 'col-lg-6' : 'col-lg-6 order-lg-2'">
