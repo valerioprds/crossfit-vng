@@ -1,19 +1,21 @@
 .container {
-  display: flex;
-  flex-wrap: nowrap;
-  /* align-content: center; */
-  justify-content: center;
-  align-items: center;
+  // Removed flex properties to better integrate with Bootstrap's grid
+  margin-top: 20px; // Optional: Add some top margin if needed
 }
+
 .card {
   background-color: #111;
   color: #fff;
   font-size: 16px;
-  width: 600px;
+  max-width: 100%; // Ensures card does not exceed the column width
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  margin: 25px;
+  margin: 10px; // Reduced margin for better space management in a grid layout
+
+  @media (min-width: 768px) {
+    width: auto; // Allows Bootstrap to control the width in grid columns
+  }
 }
 
 .card-header {
@@ -57,8 +59,8 @@
   border-radius: 5px;
   cursor: pointer;
   font-size: 1em;
-}
 
-.btn:hover {
-  background-color: #555;
+  &:hover {
+    background-color: #555;
+  }
 }
