@@ -1,65 +1,64 @@
-/* Estilo general del contenedor */
-.container-fluid {
-  max-width: 1200px;
-  margin: auto;
-  padding: 10px;
-  background-color: #fff; /* Fondo blanco para el contenedor */
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  /* align-content: center; */
+  justify-content: center;
+  align-items: center;
 }
-
-/* Estilo básico de las tarjetas */
 .card {
-  border: 1px solid #ddd; /* Bordes sutiles para definir las tarjetas */
-  transition: transform .3s, box-shadow .3s; /* Suave transición para efectos */
-  background-color: #fff; /* Fondo blanco para las tarjetas */
+  background-color: #111;
+  color: #fff;
+  font-size: 16px;
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 25px;
 }
 
-/* Efecto hover para las tarjetas, con sombra y escalado */
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-}
-
-/* Estilo del encabezado de las tarjetas */
 .card-header {
-  background-color: #d32f2f; /* Rojo intenso para el encabezado */
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-price {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.card-subtext {
+  display: block;
+  font-size: 0.4em;
+  margin-top: 5px;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.features li {
+  background-color: #222;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: #444;
   color: white;
-  font-size: 1.2em;
+  border: none;
+  padding: 10px 20px;
+  width: 100%;
+  text-align: center;
+  display: block;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
 }
 
-/* Estilo del título de precios en las tarjetas */
-.pricing-card-title {
-  font-size: 2.2rem;
-  color: #333;
-}
-
-/* Estilo de los botones en las tarjetas */
-.btn-outline-primary {
-  border-color: #d32f2f;
-  color: #d32f2f;
-}
-
-.btn-outline-primary:hover {
-  background-color: #d32f2f;
-  color: white;
-}
-
-/* Estilo de las listas dentro de las tarjetas */
-ul.list-unstyled {
-  padding-left: 0;
-  list-style-type: none;
-}
-
-li {
-  padding: 10px 0;
-  color: #666; /* Texto en tono gris oscuro para contraste suave */
-}
-
-/* Ajustes para pantallas pequeñas */
-@media (max-width: 768px) {
-  .row-cols-lg-5 {
-    flex-direction: column;
-  }
-  .col {
-    margin-bottom: 15px;
-  }
+.btn:hover {
+  background-color: #555;
 }
