@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { HeaderComponent } from "../../header/header.component";
-import { FooterComponent } from "../../footer/footer.component";
+import { HeaderComponent } from "../../../shared/header/header.component";
+import { FooterComponent } from "../../../shared/footer/footer.component";
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { DataService } from '../../../services/data.service';

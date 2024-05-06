@@ -1,8 +1,8 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Map, marker, tileLayer } from 'leaflet';
-import { FooterComponent } from "../footer/footer.component";
-import { HeaderComponent } from "../header/header.component";
+import { FooterComponent } from "../../shared/footer/footer.component";
+import { HeaderComponent } from "../../shared/header/header.component";
 
 @Component({
     selector: 'app-contact',
