@@ -4,6 +4,7 @@ import { FooterComponent } from '../../shared/footer/footer.component';
 import { RatesComponent } from '../rates/rates.component';
 import { ClassesSliderComponent } from '../clases/classes/classes-slider.component';
 import { TimetableComponent } from "../timetable/timetable.component";
+import { PopupComponent } from "../../popup/popup.component";
 
 @Component({
     selector: 'app-home',
@@ -15,7 +16,8 @@ import { TimetableComponent } from "../timetable/timetable.component";
         FooterComponent,
         RatesComponent,
         ClassesSliderComponent,
-        TimetableComponent
+        TimetableComponent,
+        PopupComponent
     ]
 })
 export class HomeComponent {}
