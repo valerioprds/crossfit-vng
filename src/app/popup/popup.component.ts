@@ -27,12 +27,20 @@ export class PopupComponent {
       phone: ['', [Validators.required, Validators.minLength(9)]],
       dropdown: ['', Validators.required],
       experiencia: ['', Validators.required],
+      textBox: ['', [Validators.required, Validators.minLength(9)]],
     });
   }
 
   sendToWhatsApp() {
-    const { firstName, lastName, email, phone, dropdown, experiencia } =
-      this.contactForm.value;
+    const {
+      firstName,
+      lastName,
+      email,
+      phone,
+      dropdown,
+      experiencia,
+      textBox,
+    } = this.contactForm.value;
     const experienceMessage =
       experiencia === 'sinExperiencia'
         ? 'Nunca he hecho crossfit'

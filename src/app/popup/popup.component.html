@@ -124,8 +124,12 @@
           </div>
           <div class="row mt-3">
             <div class="col">
-              <h6>¿QUE CLASE QUIERES PROBAR?</h6>
-              <select formControlName="dropdown" class="form-select">
+              <label for="dropdown">¿QUE CLASE QUIERES PROBAR?</label>
+              <select
+                formControlName="dropdown"
+                id="dropdown"
+                class="form-select"
+              >
                 <option value="" disabled selected>Seleccionar</option>
                 <option value="Crossfit">Crossfit</option>
                 <option value="StrengthConditioning ">
@@ -150,8 +154,8 @@
             </div>
           </div>
           <div class="container mt-3">
-            <h6>EXPERIENCIA PREVIA</h6>
-            <div class="form-check">
+            <label for="radioButtons">EXPERIENCIA PREVIA</label>
+            <div class="form-check" id="radioButtons">
               <input
                 class="form-check-input"
                 type="radio"
@@ -176,6 +180,33 @@
               <label class="form-check-label" for="conExperiencia"
                 >He entrenado CrossFit 3 meses o más</label
               >
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col">
+              <label for="textBox"
+                >¿QUÉ DÍA Y A QUÉ HORA QUIERES HACER LA PRUEBA?</label
+              >
+              <textarea
+                formControlName="textBox"
+                name="text"
+                id="textBox"
+                placeholder="indicar fecha y horario de la clase"
+              ></textarea>
+              <div *ngIf="contactForm.get('textBox')?.touched">
+                <span
+                  *ngIf="contactForm.get('textBox')?.hasError('required')"
+                  class="text-danger error-label"
+                >
+                  Campo <strong>requerido</strong>
+                </span>
+                <span
+                  *ngIf="contactForm.get('textBox')?.hasError('minlength')"
+                  class="text-danger error-label"
+                >
+                  Este campo tiene que tener minimo <strong>9 digits</strong>
+                </span>
+              </div>
             </div>
           </div>
           <div class="modal-footer">
