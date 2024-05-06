@@ -11,6 +11,7 @@ import { Map, marker, tileLayer } from 'leaflet';
 import emailjs from '@emailjs/browser';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-client-form',
@@ -66,7 +67,7 @@ export class ClientFormComponent implements AfterViewInit {
       streetAddress: ['', [Validators.required, Validators.minLength(9)]],
       postCode: ['', [Validators.required, Validators.minLength(5)]],
       city: ['', [Validators.required, Validators.minLength(5)]],
-      rates: ['', Validators.required], 
+      rates: ['', Validators.required],
       termsAccepted: [false, Validators.requiredTrue],
     });
   }
@@ -92,7 +93,11 @@ export class ClientFormComponent implements AfterViewInit {
       rates: this.contactForm.value.rates,
       termsAccepted: 'teminos aceptados',
     });
-    alert('message sent!!!!!');
+    Swal.fire({
+      title: 'Muy Bien!',
+      text: 'Tus datos han sido enviados',
+      icon: 'success',
+    });
     this.contactForm.reset();
   }
 }
