@@ -20,24 +20,20 @@ export class PopupComponent {
       email: [''],
       phone: [''],
       dropdown: [''],
-      checkbox1: [false],
-      checkbox2: [false],
+      experiencia: [''], // Changed from two boolean controls to one string control
     });
   }
 
   sendToWhatsApp() {
-    const {
-      firstName,
-      lastName,
-      email,
-      phone,
-      dropdown,
-      checkbox1,
-      checkbox2,
-    } = this.contactForm.value;
-    const message = `Hello, my name is ${firstName} ${lastName}. My email is ${email}, phone ${phone}. Selected ${dropdown}, Checkbox1: ${
-      checkbox1 ? 'Yes' : 'No'
-    }, Checkbox2: ${checkbox2 ? 'Yes' : 'No'}`;
+    const { firstName, lastName, email, phone, dropdown, experiencia } =
+      this.contactForm.value;
+    const experienceMessage =
+      experiencia === 'sinExperiencia'
+        ? 'Nunca he hecho crossfit'
+        : experiencia === 'conExperiencia'
+        ? 'He entrenado CrossFit 3 meses o más'
+        : 'No';
+    const message = `Hello, my name is ${firstName} ${lastName}. My email is ${email}, phone ${phone}. Selected ${dropdown}, Experience: ${experienceMessage}`;
     const whatsappUrl = `https://api.whatsapp.com/send?phone=+34634671046&text=${encodeURIComponent(
       message
     )}`;
