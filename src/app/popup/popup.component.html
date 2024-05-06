@@ -1,7 +1,7 @@
 <!-- Button trigger modal -->
 <button
   type="button"
-  class="btn btn-lg btn-outline-danger"
+  class="btn btn-lg btn-outline-danger pulse"
   data-bs-toggle="modal"
   data-bs-target="#exampleModal"
 >
@@ -36,7 +36,7 @@
                 type="text"
                 formControlName="firstName"
                 class="form-control"
-                placeholder="First Name"
+                placeholder="Nombre"
               />
             </div>
             <div class="col">
@@ -44,7 +44,7 @@
                 type="text"
                 formControlName="lastName"
                 class="form-control"
-                placeholder="Last Name"
+                placeholder="Apellido"
               />
             </div>
           </div>
@@ -54,7 +54,7 @@
                 type="email"
                 formControlName="email"
                 class="form-control"
-                placeholder="Email"
+                placeholder="Correo electrónico"
               />
             </div>
             <div class="col">
@@ -62,7 +62,7 @@
                 type="text"
                 formControlName="phone"
                 class="form-control"
-                placeholder="Phone Number"
+                placeholder="Número de teléfono"
               />
             </div>
           </div>
@@ -78,8 +78,8 @@
                 <option value="Halterofilia">Halterofilia</option>
                 <option value="Gymnastics">Gymnastics</option>
                 <option value="Endurance">Endurance</option>
-                <option value="Basics">Endurance</option>
-                <option value="Mobility">Endurance</option>
+                <option value="Basics">Basics</option>
+                <option value="Mobility">Mobility</option>
                 <option value="Pilates">Pilates HIIT</option>
                 <option value="Pilates">Kids</option>
               </select>
@@ -115,13 +115,7 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
+
             <button type="submit" class="btn btn-primary">
               Send via WhatsApp
             </button>

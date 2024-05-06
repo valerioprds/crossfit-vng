@@ -1,4 +1,17 @@
-.modal-dialog
-{
-  color: blue;
+.modal-dialog {
+  color: var(--primary-color);
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.btn-outline-danger.pulse {
+  animation: pulse 1.5s infinite;
 }
