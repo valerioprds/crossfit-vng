@@ -2,85 +2,85 @@
   "sections": [
     {
       "id": "crossfit",
-      "title": "CrossFit",
-      "description": "Este programa integral combina disciplinas como levantamiento de pesas, atletismo y gimnasia para ofrecer un entrenamiento completo que mejora la fuerza, la agilidad, la resistencia y la flexibilidad. Cada sesión incluye un calentamiento, un segmento de habilidad técnica, el entrenamiento del día (WOD), y un enfriamiento, asegurando un desarrollo equilibrado de todas las capacidades físicas.",
+      "title": "CROSSFIT",
+      "description": "ESTE PROGRAMA INTEGRAL COMBINA DISCIPLINAS COMO LEVANTAMIENTO DE PESAS, ATLETISMO Y GIMNASIA PARA OFRECER UN ENTRENAMIENTO COMPLETO QUE MEJORA LA FUERZA, LA AGILIDAD, LA RESISTENCIA Y LA FLEXIBILIDAD. CADA SESIÓN INCLUYE UN CALENTAMIENTO, UN SEGMENTO DE HABILIDAD TÉCNICA, EL ENTRENAMIENTO DEL DÍA (WOD), Y UN ENFRIAMIENTO, ASEGURANDO UN DESARROLLO EQUILIBRADO DE TODAS LAS CAPACIDADES FÍSICAS.",
       "image": "/assets/images/fotos-clases/CrossFitVNG-121.webp",
       "imageAlt": "CrossFit Class"
     },
     {
       "id": "strength-conditioning",
-      "title": "Strength and Conditioning",
-      "description": "Diseñado para incrementar la fuerza muscular y la capacidad cardiovascular, este curso utiliza una mezcla de levantamientos de pesas, ejercicios de cardio y técnicas de movimiento funcional. A través de rutinas estructuradas, los participantes trabajan hacia la mejora de su rendimiento físico general y la prevención de lesiones.",
+      "title": "STRENGTH AND CONDITIONING",
+      "description": "DISEÑADO PARA INCREMENTAR LA FUERZA MUSCULAR Y LA CAPACIDAD CARDIOVASCULAR, ESTE CURSO UTILIZA UNA MEZCLA DE LEVANTAMIENTOS DE PESAS, EJERCICIOS DE CARDIO Y TÉCNICAS DE MOVIMIENTO FUNCIONAL. A TRAVÉS DE RUTINAS ESTRUCTURADAS, LOS PARTICIPANTES TRABAJAN HACIA LA MEJORA DE SU RENDIMIENTO FÍSICO GENERAL Y LA PREVENCIÓN DE LESIONES.",
       "image": "/assets/images/fotos-clases/CrossFitVNG-121.webp",
       "imageAlt": "Strength and Conditioning Class"
     },
     {
       "id": "weightlifting",
-      "title": "Halterofilia",
-      "description": "Especialmente enfocada en el levantamiento de pesas olímpico, esta clase enseña y perfecciona técnicas para ejecutar el snatch y el clean and jerk. A través de un enfoque meticuloso en la forma y la técnica, los atletas mejoran su fuerza explosiva y su capacidad de ejecución bajo presión.",
+      "title": "HALTEROFILIA",
+      "description": "ESPECIALMENTE ENFOCADA EN EL LEVANTAMIENTO DE PESAS OLÍMPICO, ESTA CLASE ENSEÑA Y PERFECCIONA TÉCNICAS PARA EJECUTAR EL SNATCH Y EL CLEAN AND JERK. A TRAVÉS DE UN ENFOQUE METICULOSO EN LA FORMA Y LA TÉCNICA, LOS ATLETAS MEJORAN SU FUERZA EXPLOSIVA Y SU CAPACIDAD DE EJECUCIÓN BAJO PRESIÓN.",
       "image": "/assets/images/fotos-clases/CrossFitVNG-121.webp",
       "imageAlt": "Weightlifting Class"
     },
     {
       "id": "gymnastics",
-      "title": "Gymnastics",
-      "description": "Esta clase está diseñada para mejorar habilidades específicas de gimnasia como dominadas, dips, handstands y movimientos de equilibrio. Los participantes trabajan en controlar su propio cuerpo a través de ejercicios que aumentan la fuerza, la flexibilidad, y la coordinación, esenciales para el éxito en numerosos deportes y actividades físicas.",
+      "title": "GYMNASTICS",
+      "description": "ESTA CLASE ESTÁ DISEÑADA PARA MEJORAR HABILIDADES ESPECÍFICAS DE GIMNASIA COMO DOMINADAS, DIPS, HANDSTANDS Y MOVIMIENTOS DE EQUILIBRIO. LOS PARTICIPANTES TRABAJAN EN CONTROLAR SU PROPIO CUERPO A TRAVÉS DE EJERCICIOS QUE AUMENTAN LA FUERZA, LA FLEXIBILIDAD, Y LA COORDINACIÓN, ESENCIALES PARA EL ÉXITO EN NUMEROSOS DEPORTES Y ACTIVIDADES FÍSICAS.",
       "image": "/assets/images/fotos-clases/CrossFitVNG-121.webp",
       "imageAlt": "Gymnastics Class"
     },
     {
       "id": "endurance",
-      "title": "Endurance",
-      "description": "Centrándose en la resistencia cardiovascular, esta clase utiliza actividades de larga duración como correr, remar y ciclismo para incrementar la capacidad aeróbica y anaeróbica de los atletas. A través de entrenamientos progresivos, los participantes pueden mejorar su resistencia, recuperación y capacidad para realizar esfuerzos sostenidos.",
+      "title": "ENDURANCE",
+      "description": "CENTRÁNDOSE EN LA RESISTENCIA CARDIOVASCULAR, ESTA CLASE UTILIZA ACTIVIDADES DE LARGA DURACIÓN COMO CORRER, REMAR Y CICLISMO PARA INCREMENTAR LA CAPACIDAD AERÓBICA Y ANAERÓBICA DE LOS ATLETAS. A TRAVÉS DE ENTRENAMIENTOS PROGRESIVOS, LOS PARTICIPANTES PUEDEN MEJORAR SU RESISTENCIA, RECUPERACIÓN Y CAPACIDAD PARA REALIZAR ESFUERZOS SOSTENIDOS.",
       "image": "/assets/images/fotos-clases/CrossFitVNG-121.webp",
       "imageAlt": "Endurance Class"
     },
     {
       "id": "basics",
-      "title": "Basics",
-      "description": "Perfecta para principiantes, esta clase introduce los fundamentos del CrossFit, incluyendo técnicas de levantamiento de pesas, movimientos básicos de gimnasia y términos comunes usados en el CrossFit. Los nuevos atletas aprenden a realizar ejercicios de manera segura y eficaz para maximizar su entrenamiento mientras minimizan el riesgo de lesión.",
+      "title": "BASICS",
+      "description": "PERFECTA PARA PRINCIPIANTES, ESTA CLASE INTRODUCE LOS FUNDAMENTOS DEL CROSSFIT, INCLUYENDO TÉCNICAS DE LEVANTAMIENTO DE PESAS, MOVIMIENTOS BÁSICOS DE GIMNASIA Y TÉRMINOS COMUNES USADOS EN EL CROSSFIT. LOS NUEVOS ATLETAS APRENDEN A REALIZAR EJERCICIOS DE MANERA SEGURA Y EFICAZ PARA MAXIMIZAR SU ENTRENAMIENTO MIENTRAS MINIMIZAN EL RIESGO DE LESIÓN.",
       "image": "/assets/images/fotos-clases/CrossFitVNG-121.webp",
       "imageAlt": "Basics Class"
     },
     {
       "id": "mobility",
-      "title": "Mobility",
-      "description": "Esta clase se centra en mejorar el rango de movimiento y la flexibilidad general a través de estiramientos dirigidos, trabajo con rodillos de espuma y técnicas de liberación miofascial. Mejorar la movilidad ayuda a los atletas a ejecutar movimientos con mayor eficiencia y a reducir el riesgo de lesiones durante actividades físicas intensas.",
+      "title": "MOBILITY",
+      "description": "ESTA CLASE SE CENTRA EN MEJORAR EL RANGO DE MOVIMIENTO Y LA FLEXIBILIDAD GENERAL A TRAVÉS DE ESTIRAMIENTOS DIRIGIDOS, TRABAJO CON RODILLOS DE ESPUMA Y TÉCNICAS DE LIBERACIÓN MIOFASCIAL. MEJORAR LA MOVILIDAD AYUDA A LOS ATLETAS A EJECUTAR MOVIMIENTOS CON MAYOR EFICIENCIA Y A REDUCIR EL RIESGO DE LESIONES DURANTE ACTIVIDADES FÍSICAS INTENSAS.",
       "image": "/assets/images/fotos-clases/CrossFitVNG-121.webp",
       "imageAlt": "Mobility Class"
     },
     {
       "id": "pilates-hiit",
-      "title": "Pilates HIIT",
-      "description": "Una fusión energética de Pilates y entrenamiento interválico de alta intensidad (HIIT), esta clase desafía tanto el cuerpo como la mente. Mejora el control del core, la resistencia muscular, y la capacidad cardiovascular, todo en una sesión que también enfatiza la precisión y la eficiencia del movimiento.",
+      "title": "PILATES HIIT",
+      "description": "UNA FUSIÓN ENERGÉTICA DE PILATES Y ENTRENAMIENTO INTERVÁLICO DE ALTA INTENSIDAD (HIIT), ESTA CLASE DESAFÍA TANTO EL CUERPO COMO LA MENTE. MEJORA EL CONTROL DEL CORE, LA RESISTENCIA MUSCULAR, Y LA CAPACIDAD CARDIOVASCULAR, TODO EN UNA SESIÓN QUE TAMBIÉN ENFATIZA LA PRECISIÓN Y LA EFICIENCIA DEL MOVIMIENTO.",
       "image": "/assets/images/fotos-clases/CrossFitVNG-121.webp",
       "imageAlt": "Pilates HIIT Class"
     },
     {
       "id": "kids",
-      "title": "Kids",
-      "description": "Dirigida a niños, esta clase combina fundamentos de fitness con juegos y actividades diseñadas para fomentar un estilo de vida activo desde una edad temprana. Los niños aprenden habilidades motoras básicas, cooperación y trabajo en equipo, todo en un ambiente divertido y seguro.",
+      "title": "KIDS",
+      "description": "DIRIGIDA A NIÑOS, ESTA CLASE COMBINA FUNDAMENTOS DE FITNESS CON JUEGOS Y ACTIVIDADES DISEÑADAS PARA FOMENTAR UN ESTILO DE VIDA ACTIVO DESDE UNA EDAD TEMPRANA. LOS NIÑOS APRENDEN HABILIDADES MOTORAS BÁSICAS, COOPERACIÓN Y TRABAJO EN EQUIPO, TODO EN UN AMBIENTE DIVERTIDO Y SEGURO.",
       "image": "/assets/images/fotos-clases/CrossFitVNG-121.webp",
       "imageAlt": "Kids Class"
     },
     {
       "id": "synergy-wod",
-      "title": "Synergy WOD",
-      "description": "Este entrenamiento combinado utiliza diferentes modalidades para ofrecer un programa de ejercicios equilibrado. Las sesiones son dinámicas y variadas, asegurando que todos los aspectos del fitness son trabajados, desde la fuerza hasta la movilidad, lo que resulta en una mejora integral del rendimiento físico.",
+      "title": "SYNERGY WOD",
+      "description": "ESTE ENTRENAMIENTO COMBINADO UTILIZA DIFERENTES MODALIDADES PARA OFRECER UN PROGRAMA DE EJERCICIOS EQUILIBRADO. LAS SESIONES SON DINÁMICAS Y VARIADAS, ASEGURANDO QUE TODOS LOS ASPECTOS DEL FITNESS SON TRABAJADOS, DESDE LA FUERZA HASTA LA MOVILIDAD, LO QUE RESULTA EN UNA MEJORA INTEGRAL DEL RENDIMIENTO FÍSICO.",
       "image": "/assets/images/fotos-clases/CrossFitVNG-121.webp",
       "imageAlt": "Synergy WOD Class"
     },
     {
       "id": "train-with-coach",
-      "title": "Entrena con tu Coach",
-      "description": "Esta opción de entrenamiento personalizado permite a los atletas trabajar directamente con un entrenador para enfocarse en objetivos específicos. Es ideal para aquellos que buscan atención personalizada y estrategias adaptadas a sus necesidades individuales de fitness y salud.",
+      "title": "ENTRENA CON TU COACH",
+      "description": "(HAY QUE CAMBIAR ESTA DESCRIPCIÓN) ESTA OPCIÓN DE ENTRENAMIENTO PERSONALIZADO PERMITE A LOS ATLETAS TRABAJAR DIRECTAMENTE CON UN ENTRENADOR PARA ENFOCARSE EN OBJETIVOS ESPECÍFICOS. ES IDEAL PARA AQUELLOS QUE BUSCAN ATENCIÓN PERSONALIZADA Y ESTRATEGIAS ADAPTADAS A SUS NECESIDADES INDIVIDUALES DE FITNESS Y SALUD.",
       "image": "/assets/images/fotos-clases/CrossFitVNG-121.webp",
       "imageAlt": "Train with Coach"
     },
     {
       "id": "oposiciones",
-      "title": "Oposiciones",
-      "description": "Preparada específicamente para aquellos que buscan superar las pruebas físicas de oposiciones para cuerpos y fuerzas de seguridad. Los entrenamientos se diseñan para cumplir con los criterios específicos de las pruebas, enfocándose en la resistencia, la fuerza y la agilidad requeridas.",
+      "title": "OPOSICIONES",
+      "description": "PREPARADA ESPECÍFICAMENTE PARA AQUELLOS QUE BUSCAN SUPERAR LAS PRUEBAS FÍSICAS DE OPOSICIONES PARA CUERPOS Y FUERZAS DE SEGURIDAD. LOS ENTRENAMIENTOS SE DISEÑAN PARA CUMPLIR CON LOS CRITERIOS ESPECÍFICOS DE LAS PRUEBAS, ENFOCÁNDOSE EN LA RESISTENCIA, LA FUERZA Y LA AGILIDAD REQUERIDAS.",
       "image": "/assets/images/fotos-clases/CrossFitVNG-121.webp",
       "imageAlt": "Oposiciones Class"
     }
