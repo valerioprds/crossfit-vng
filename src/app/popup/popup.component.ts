@@ -49,5 +49,6 @@ export class PopupComponent {
       message
     )}`;
     window.open(whatsappUrl, '_blank');
+    this.contactForm.reset();
   }
 }
