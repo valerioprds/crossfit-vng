@@ -1,67 +1,62 @@
 [
   {
-    "name": "Bronze ",
-    "price": "54 eur",
+    "name": "BRONZE",
+    "price": "54 €",
     "subtext": "al mes",
     "features": ["5 clases", "2 Open Box"]
   },
   {
-    "name": "Silver",
-    "price": "66 eur",
+    "name": "SILVER",
+    "price": "66 €",
     "subtext": "al mes",
     "features": ["9 clases", "4 Open Box"]
   },
   {
-    "name": "Gold",
-    "price": "82 eur",
+    "name": "GOLD",
+    "price": "82 €",
     "subtext": "al mes",
     "features": ["13 clases", "6 Open Box"]
   },
   {
-    "name": "Platinum",
-    "price": "96 eur",
+    "name": "PLATINUM",
+    "price": "96 €",
     "subtext": "al mes",
     "features": ["17 clases", "8 Open Box"]
   },
+
   {
-    "name": "Platinum",
-    "price": "96 eur",
-    "subtext": "al mes",
-    "features": ["17 clases", "8 Open Box"]
-  },
-  {
-    "name": "Diamond",
-    "price": "104 eur",
+    "name": "DIAMOND",
+    "price": "104 €",
     "subtext": "al mes",
     "features": ["clases ilimitadas", "Open Box ilimitado"]
   },
   {
-    "name": "Bono 110",
-    "price": "110 eur",
+    "name": "Bono 10",
+    "price": "110 €",
     "subtext": "al mes",
     "features": ["10 clases / Open Box"]
   },
   {
-    "name": "Bono 65",
-    "price": "65 eur",
+    "name": "Bono 5",
+    "price": "65 €",
     "subtext": "al mes",
     "features": ["5 clases / Open Box"]
   },
   {
-    "name": "Drop In 16",
-    "price": "16 eur",
+    "name": "DROP IN CLASE",
+    "price": "16 €",
     "subtext": "al mes",
     "features": ["1 Clase cualquiera"]
   },
   {
-    "name": "Drop In 12",
-    "price": "16 eur",
+    "name": "DROP IN OPENBOX",
+    "price": "12 €",
     "subtext": "al mes",
     "features": ["1 sesion de Openbox"]
   },
   {
-    "name": "Kids",
-    "price": "40 eur",
+    "name": "KIDS",
+    "price": "40 €",
     "subtext": "al mes",
     "features": ["1 sesion a la semana"]
   }
