@@ -242,7 +242,7 @@
         <option value="Dropin12">Drop in 12€ por sesión 1 Open Box</option>
         <option value="kids">Kids 40€</option>
       </select>
-      <div *ngIf="contactForm.get('city')?.touched">
+      <div *ngIf="contactForm.get('rates')?.touched">
         <span
           *ngIf="contactForm.get('rates')?.hasError('required')"
           class="text-danger error-label"
@@ -265,18 +265,18 @@
           id="termsAccepted"
           formControlName="termsAccepted"
         />
-        <div *ngIf="contactForm.get('city')?.touched">
+        <label class="form-check-label" for="termsAccepted">
+          He leído y acepto las condiciones generales del contrato.
+          <span>*</span>
+        </label>
+        <div *ngIf="contactForm.get('termsAccepted')?.touched">
           <span
-            *ngIf="contactForm.get('rates')?.hasError('required')"
+            *ngIf="contactForm.get('termsAccepted')?.hasError('required')"
             class="text-danger error-label"
           >
             Campo <strong>requerido</strong>
           </span>
         </div>
-        <label class="form-check-label" for="termsAccepted">
-          He leído y acepto las condiciones generales del contrato.
-          <span>*</span>
-        </label>
       </div>
     </div>
     <div class="col-12">

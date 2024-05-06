@@ -1,10 +1,16 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import {
+  FormBuilder,
+  FormGroup,
+  ReactiveFormsModule,
+  Validators,
+} from '@angular/forms';
 
 @Component({
   selector: 'app-popup',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule , CommonModule],
   templateUrl: './popup.component.html',
   styleUrl: './popup.component.scss',
 })
@@ -15,12 +21,12 @@ export class PopupComponent {
 
   ngOnInit(): void {
     this.contactForm = this.fb.group({
-      firstName: [''],
-      lastName: [''],
-      email: [''],
-      phone: [''],
-      dropdown: [''],
-      experiencia: [''], // Changed from two boolean controls to one string control
+      firstName: ['', [Validators.required, Validators.minLength(4)]],
+      lastName: ['', [Validators.required, Validators.minLength(4)]],
+      email: ['', [Validators.required, Validators.email]],
+      phone: ['', [Validators.required, Validators.minLength(9)]],
+      dropdown: ['', Validators.required],
+      experiencia: ['', Validators.required],
     });
   }
 

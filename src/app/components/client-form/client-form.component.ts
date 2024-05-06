@@ -66,7 +66,7 @@ export class ClientFormComponent implements AfterViewInit {
       streetAddress: ['', [Validators.required, Validators.minLength(9)]],
       postCode: ['', [Validators.required, Validators.minLength(5)]],
       city: ['', [Validators.required, Validators.minLength(5)]],
-      rates: ['', Validators.required], // New field
+      rates: ['', Validators.required], 
       termsAccepted: [false, Validators.requiredTrue],
     });
   }

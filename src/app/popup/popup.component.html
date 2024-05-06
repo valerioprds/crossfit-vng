@@ -38,6 +38,20 @@
                 class="form-control"
                 placeholder="Nombre"
               />
+              <div *ngIf="contactForm.get('firstName')?.touched">
+                <span
+                  *ngIf="contactForm.get('firstName')?.hasError('required')"
+                  class="text-danger error-label"
+                >
+                  Campo <strong>requerido</strong>
+                </span>
+                <span
+                  *ngIf="contactForm.get('firstName')?.hasError('minlength')"
+                  class="text-danger error-label"
+                >
+                  Este campo tiene que tener minimo <strong>4 digits</strong>
+                </span>
+              </div>
             </div>
             <div class="col">
               <input
@@ -46,6 +60,20 @@
                 class="form-control"
                 placeholder="Apellido"
               />
+              <div *ngIf="contactForm.get('lastName')?.touched">
+                <span
+                  *ngIf="contactForm.get('lastName')?.hasError('required')"
+                  class="text-danger error-label"
+                >
+                  Campo <strong>requerido</strong>
+                </span>
+                <span
+                  *ngIf="contactForm.get('lastName')?.hasError('minlength')"
+                  class="text-danger error-label"
+                >
+                  Este campo tiene que tener minimo <strong>4 digits</strong>
+                </span>
+              </div>
             </div>
           </div>
           <div class="row mt-3">
@@ -56,6 +84,20 @@
                 class="form-control"
                 placeholder="Correo electrónico"
               />
+              <div *ngIf="contactForm.get('email')?.touched">
+                <span
+                  *ngIf="contactForm.get('email')?.hasError('required')"
+                  class="text-danger error-label"
+                >
+                  Campo <strong>requerido</strong>
+                </span>
+                <span
+                  *ngIf="contactForm.get('email')?.hasError('email')"
+                  class="text-danger error-label"
+                >
+                  Correo <strong>no valido</strong>
+                </span>
+              </div>
             </div>
             <div class="col">
               <input
@@ -64,6 +106,20 @@
                 class="form-control"
                 placeholder="Número de teléfono"
               />
+              <div *ngIf="contactForm.get('phone')?.touched">
+                <span
+                  *ngIf="contactForm.get('phone')?.hasError('required')"
+                  class="text-danger error-label"
+                >
+                  Campo <strong>requerido</strong>
+                </span>
+                <span
+                  *ngIf="contactForm.get('phone')?.hasError('minlength')"
+                  class="text-danger error-label"
+                >
+                  Este campo tiene que tener minimo <strong>9 digits</strong>
+                </span>
+              </div>
             </div>
           </div>
           <div class="row mt-3">
@@ -83,6 +139,14 @@
                 <option value="Pilates">Pilates HIIT</option>
                 <option value="Pilates">Kids</option>
               </select>
+              <div *ngIf="contactForm.get('dropdown')?.touched">
+                <span
+                  *ngIf="contactForm.get('dropdown')?.hasError('required')"
+                  class="text-danger error-label"
+                >
+                  Campo <strong>requerido</strong>
+                </span>
+              </div>
             </div>
           </div>
           <div class="container mt-3">
@@ -115,8 +179,11 @@
             </div>
           </div>
           <div class="modal-footer">
-
-            <button type="submit" class="btn btn-success">
+            <button
+              type="submit"
+              class="btn btn-success"
+              [disabled]="!contactForm.valid"
+            >
               Enviar por WhatsApp
             </button>
           </div>
