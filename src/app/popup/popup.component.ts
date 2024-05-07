@@ -52,7 +52,9 @@ export class PopupComponent {
         - **Correo electrónico:** ${email}
         - **Teléfono:** ${phone}
         - **Quiero probar:** ${dropdown}
-        - **Experiencia:** ${experienceMessage}`;
+        - **Experiencia:** ${experienceMessage}
+        - **fecha y hora:** ${textBox}`;
+
     const whatsappUrl = `https://api.whatsapp.com/send?phone=+34688467513&text=${encodeURIComponent(
       message
     )}`;
