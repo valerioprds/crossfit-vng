@@ -1,12 +1,31 @@
 .team-section .bg-image {
-  height: 400px; /* Adjust based on your preference */
-  background-image: url("/assets/images/equipo.jpeg");
+  position: relative;
+  height: 400px;
+  background-image: url("/assets/images/fotos-clases/CrossFitVNG_Inaguracion-224.webp");
   background-size: cover;
   background-position: center;
 }
 
+.team-section .bg-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.bg-image h2 {
+  position: relative;
+  //font-size: 20px;
+  z-index: 2;
+}
+
 .bg-image p {
+  position: relative;
   font-size: 20px;
+  z-index: 2;
 }
 
 .team-section .card {
@@ -15,11 +34,11 @@
 }
 
 .team-section .card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(233, 20, 20, 0.893);
 }
 
 .team-section .card-img-top {
   width: 100%;
-  height: 250px; /* Fixed height for better alignment */
-  object-fit: cover; /* Ensure the image covers the area */
+  height: 250px;
+  object-fit: cover;
 }
