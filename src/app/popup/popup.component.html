@@ -10,7 +10,7 @@
 
 <!-- Modal -->
 <div
-  class="modal fade"
+  class="modal fade text-white"
   id="exampleModal"
   tabindex="-1"
   aria-labelledby="exampleModalLabel"
@@ -19,12 +19,12 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">CLASE DE PRUEBA</h1>
+        <h2 class="modal-title fs-5 " id="exampleModalLabel">CLASE DE PRUEBA</h2>
         <button
           type="button"
           class="btn-close"
           data-bs-dismiss="modal"
-          aria-label="Close"
+          aria-label="Close" 
         ></button>
       </div>
       <!-- Modal Body with Contact Form -->
@@ -37,21 +37,35 @@
                 formControlName="firstName"
                 class="form-control"
                 placeholder="Nombre"
+                [ngClass]="{
+                  'error-input':
+                    contactForm.get('firstName')?.invalid &&
+                    contactForm.get('firstName')?.touched
+                }"
               />
-              <div *ngIf="contactForm.get('firstName')?.touched">
+              <!-- start of validators -->
+              <div
+                *ngIf="contactForm.get('firstName')?.touched"
+                class="error-label fade-in"
+              >
                 <span
                   *ngIf="contactForm.get('firstName')?.hasError('required')"
-                  class="text-danger error-label"
+                  class="text-danger"
                 >
-                  Campo <strong>requerido</strong>
+                  <i class="error-icon fa-solid fa-exclamation-circle"></i>
+                  Campo
+                  <strong>requerido</strong>
                 </span>
                 <span
                   *ngIf="contactForm.get('firstName')?.hasError('minlength')"
-                  class="text-danger error-label"
+                  class="text-warning"
                 >
-                  Este campo tiene que tener minimo <strong>4 digits</strong>
+                  <i class="error-icon fa-solid fa-exclamation-triangle"></i>
+                  Este campo tiene que tener mínimo
+                  <strong>4 caracteres</strong>
                 </span>
               </div>
+              <!-- end of validators -->
             </div>
             <div class="col">
               <input
@@ -59,19 +73,31 @@
                 formControlName="lastName"
                 class="form-control"
                 placeholder="Apellido"
+                [ngClass]="{
+                  'error-input':
+                    contactForm.get('lastName')?.invalid &&
+                    contactForm.get('lastName')?.touched
+                }"
               />
-              <div *ngIf="contactForm.get('lastName')?.touched">
+              <div
+                *ngIf="contactForm.get('lastName')?.touched"
+                class="error-label fade-in"
+              >
                 <span
                   *ngIf="contactForm.get('lastName')?.hasError('required')"
-                  class="text-danger error-label"
+                  class="text-danger"
                 >
-                  Campo <strong>requerido</strong>
+                  <i class="error-icon fa-solid fa-exclamation-circle"></i>
+                  Campo
+                  <strong>requerido</strong>
                 </span>
                 <span
                   *ngIf="contactForm.get('lastName')?.hasError('minlength')"
-                  class="text-danger error-label"
+                  class="text-warning"
                 >
-                  Este campo tiene que tener minimo <strong>4 digits</strong>
+                  <i class="error-icon fa-solid fa-exclamation-triangle"></i>
+                  Este campo tiene que tener mínimo
+                  <strong>4 caracteres</strong>
                 </span>
               </div>
             </div>
@@ -83,19 +109,31 @@
                 formControlName="email"
                 class="form-control"
                 placeholder="Correo electrónico"
+                [ngClass]="{
+                  'error-input':
+                    contactForm.get('email')?.invalid &&
+                    contactForm.get('email')?.touched
+                }"
               />
-              <div *ngIf="contactForm.get('email')?.touched">
+              <div
+                *ngIf="contactForm.get('email')?.touched"
+                class="error-label fade-in"
+              >
                 <span
                   *ngIf="contactForm.get('email')?.hasError('required')"
-                  class="text-danger error-label"
+                  class="text-danger"
                 >
-                  Campo <strong>requerido</strong>
+                  <i class="error-icon fa-solid fa-exclamation-circle"></i>
+                  Campo
+                  <strong>requerido</strong>
                 </span>
                 <span
                   *ngIf="contactForm.get('email')?.hasError('email')"
-                  class="text-danger error-label"
+                  class="text-warning"
                 >
-                  Correo <strong>no valido</strong>
+                  <i class="error-icon fa-solid fa-exclamation-triangle"></i>
+                  correo
+                  <strong>no valido</strong>
                 </span>
               </div>
             </div>
@@ -105,19 +143,31 @@
                 formControlName="phone"
                 class="form-control"
                 placeholder="Número de teléfono"
+                [ngClass]="{
+                  'error-input':
+                    contactForm.get('phone')?.invalid &&
+                    contactForm.get('phone')?.touched
+                }"
               />
-              <div *ngIf="contactForm.get('phone')?.touched">
+              <div
+                *ngIf="contactForm.get('phone')?.touched"
+                class="error-label fade-in"
+              >
                 <span
                   *ngIf="contactForm.get('phone')?.hasError('required')"
-                  class="text-danger error-label"
+                  class="text-danger"
                 >
-                  Campo <strong>requerido</strong>
+                  <i class="error-icon fa-solid fa-exclamation-circle"></i>
+                  Campo
+                  <strong>requerido</strong>
                 </span>
                 <span
                   *ngIf="contactForm.get('phone')?.hasError('minlength')"
-                  class="text-danger error-label"
+                  class="text-warning"
                 >
-                  Este campo tiene que tener minimo <strong>9 digits</strong>
+                  <i class="error-icon fa-solid fa-exclamation-triangle"></i>
+                  Este campo tiene que tener mínimo
+                  <strong>4 caracteres</strong>
                 </span>
               </div>
             </div>
@@ -143,12 +193,17 @@
                 <option value="Pilates">Pilates HIIT</option>
                 <option value="Pilates">Kids</option>
               </select>
-              <div *ngIf="contactForm.get('dropdown')?.touched">
+              <div
+                *ngIf="contactForm.get('dropdown')?.touched"
+                class="error-label fade-in"
+              >
                 <span
                   *ngIf="contactForm.get('dropdown')?.hasError('required')"
-                  class="text-danger error-label"
+                  class="text-danger"
                 >
-                  Campo <strong>requerido</strong>
+                  <i class="error-icon fa-solid fa-exclamation-circle"></i>
+                  Campo
+                  <strong>requerido</strong>
                 </span>
               </div>
             </div>
@@ -193,19 +248,31 @@
                 id="textBox"
                 placeholder="indicar fecha y horario de la clase"
                 style="height: 50px; width: 100%; border-radius: 5px"
+                [ngClass]="{
+                  'error-input':
+                    contactForm.get('textBox')?.invalid &&
+                    contactForm.get('textBox')?.touched
+                }"
               ></textarea>
-              <div *ngIf="contactForm.get('textBox')?.touched">
+              <div
+                *ngIf="contactForm.get('textBox')?.touched"
+                class="error-label fade-in"
+              >
                 <span
                   *ngIf="contactForm.get('textBox')?.hasError('required')"
-                  class="text-danger error-label"
+                  class="text-danger"
                 >
-                  Campo <strong>requerido</strong>
+                  <i class="error-icon fa-solid fa-exclamation-circle"></i>
+                  Campo
+                  <strong>requerido</strong>
                 </span>
                 <span
                   *ngIf="contactForm.get('textBox')?.hasError('minlength')"
-                  class="text-danger error-label"
+                  class="text-warning"
                 >
-                  Este campo tiene que tener minimo <strong>9 digits</strong>
+                  <i class="error-icon fa-solid fa-exclamation-triangle"></i>
+                  Este campo tiene que tener mínimo
+                  <strong>9 caracteres</strong>
                 </span>
               </div>
             </div>

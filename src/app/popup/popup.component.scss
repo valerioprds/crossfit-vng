@@ -1,11 +1,33 @@
 .modal-dialog {
   color: white;
 }
+h2{
+  font-size: 30px;
+}
+
+
 
 .modal-content {
   background-color: #383d42;
 }
 
+.error-input {
+  border-left: 5px solid red;
+}
+
+.error-label {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.error-label strong {
+  margin-left: 5px;
+}
+
+.error-icon {
+  margin-right: 5px;
+}
 
 @keyframes pulse {
   0%,
@@ -20,4 +42,3 @@
 .btn-outline-danger.pulse {
   animation: pulse 1.5s infinite;
 }
-
