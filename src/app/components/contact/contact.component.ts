@@ -1,22 +1,27 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import {
+  ReactiveFormsModule,
+  FormBuilder,
+  FormGroup,
+  Validators,
+} from '@angular/forms';
 import { Map, marker, tileLayer } from 'leaflet';
-import { FooterComponent } from "../../shared/footer/footer.component";
-import { HeaderComponent } from "../../shared/header/header.component";
+import { FooterComponent } from '../../shared/footer/footer.component';
+import { HeaderComponent } from '../../shared/header/header.component';
 
 @Component({
-    selector: 'app-contact',
-    standalone: true,
-    templateUrl: './contact.component.html',
-    styleUrl: './contact.component.scss',
-    imports: [ReactiveFormsModule, FooterComponent, HeaderComponent]
+  selector: 'app-contact',
+  standalone: true,
+  templateUrl: './contact.component.html',
+  styleUrl: './contact.component.scss',
+  imports: [ReactiveFormsModule, FooterComponent, HeaderComponent],
 })
 export class ContactComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     const map = new Map('map').setView([41.24043, 1.7257], 20);
     tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 16,
-      minZoom: 13,
+      maxZoom: 17,
+      minZoom: 10,
       attribution:
         '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     }).addTo(map);
@@ -27,8 +32,6 @@ export class ContactComponent implements AfterViewInit {
 
     map.fitBounds([[markerItem.getLatLng().lat, markerItem.getLatLng().lng]]);
   }
-
-
 
   contactForm: FormGroup;
 
@@ -43,7 +46,7 @@ export class ContactComponent implements AfterViewInit {
       streetAddress: ['', Validators.required],
       postCode: ['', Validators.required],
       city: ['', Validators.required],
-      termsAccepted: [false, Validators.requiredTrue]
+      termsAccepted: [false, Validators.requiredTrue],
     });
   }
 
