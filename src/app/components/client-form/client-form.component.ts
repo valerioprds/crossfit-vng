@@ -25,23 +25,7 @@ import Swal from 'sweetalert2';
     CommonModule,
   ],
 })
-export class ClientFormComponent implements AfterViewInit {
-  ngAfterViewInit(): void {
-    const map = new Map('map').setView([41.24043, 1.7257], 20);
-    tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 16,
-      minZoom: 13,
-      attribution:
-        '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-    }).addTo(map);
-
-    const markerItem = marker([41.24043, 1.7257])
-      .addTo(map)
-      .bindPopup('CrossFit VNG <br> Carrer del guix 8');
-
-    map.fitBounds([[markerItem.getLatLng().lat, markerItem.getLatLng().lng]]);
-  }
-
+export class ClientFormComponent {
   contactForm: FormGroup = this.fb.group({
     firstName: '',
     lastName: '',
