@@ -1,6 +1,11 @@
 .modal-dialog {
-  color: var(--primary-color);
+  color: white;
 }
+
+.modal-content {
+  background-color: #383d42;
+}
+
 
 @keyframes pulse {
   0%,
