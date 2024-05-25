@@ -2,6 +2,8 @@
   color: white;
 }
 
+
+
 .logo-form-container {
   display: flex;
   flex-direction: row;
@@ -15,6 +17,12 @@
 h1 {
   color: var(--secondary-color);
   font-weight: bold;
+}
+.contact-form-container {
+  background: rgba(0, 0, 0, 0.7) !important;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .logo-form-img {
@@ -84,6 +92,9 @@ h1 {
   animation: fadeIn 0.3s ease;
 }
 
+.submit-button {
+  width: 100%;
+}
 @keyframes fadeIn {
   from {
     opacity: 0;

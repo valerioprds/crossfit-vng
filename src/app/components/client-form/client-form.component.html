@@ -16,14 +16,14 @@
     >
   </div>
 </div>
-<div class="container mt-4">
+<div class="container mt-4 contact-form-container">
   <form
     [formGroup]="contactForm"
     action="javascript:void(0)"
     (submit)="send()"
     class="row g-3"
   >
-    <h1>FICHA CLIENTE</h1>
+    <h1 class="text-center">FICHA CLIENTE</h1>
     <div class="col-md-6">
       <label for="firstName" class="form-label">Nombre <span>*</span> </label>
       <input
@@ -391,11 +391,11 @@
         </div>
       </div>
     </div>
-    <div class="col-12">
+    <div class="col-12 text-center">
       <button
         type="submit"
         [disabled]="!contactForm.valid"
-        class="btn btn-outline-light btn-lg"
+        class="btn btn-outline-light btn-lg submit-button"
       >
         Enviar
       </button>
