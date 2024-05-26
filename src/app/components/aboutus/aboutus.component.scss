@@ -19,18 +19,21 @@
 }
 .bg-image h2 {
   position: relative;
-  //font-size: 20px;
   z-index: 2;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px #000;
+  font-weight: bold;
 }
 
 .bg-image p {
   position: relative;
   font-size: 20px;
   z-index: 2;
+  text-shadow: 2px 2px 8px #000;
 }
 
 .team-section .card {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
 }
 
