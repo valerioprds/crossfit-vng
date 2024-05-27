@@ -17,6 +17,7 @@
   aria-hidden="true"
 >
   <div class="modal-dialog">
+    <!-- Standard size for mobile-first approach -->
     <div class="modal-content">
       <div class="modal-header">
         <h2 class="modal-title fs-5" id="exampleModalLabel">CLASE DE PRUEBA</h2>
@@ -30,186 +31,185 @@
       <!-- Modal Body with Contact Form -->
       <div class="modal-body">
         <form [formGroup]="contactForm" (ngSubmit)="sendToWhatsApp()">
-          <div class="row">
-            <div class="col">
-              <input
-                type="text"
-                formControlName="firstName"
-                class="form-control"
-                placeholder="Nombre"
-                [ngClass]="{
-                  'error-input':
-                    contactForm.get('firstName')?.invalid &&
-                    contactForm.get('firstName')?.touched
-                }"
-              />
-              <!-- start of validators -->
-              <div
-                *ngIf="contactForm.get('firstName')?.touched"
-                class="error-label fade-in"
+          <div class="mb-3">
+            <input
+              type="text"
+              formControlName="firstName"
+              class="form-control"
+              placeholder="Nombre"
+              [ngClass]="{
+                'error-input':
+                  contactForm.get('firstName')?.invalid &&
+                  contactForm.get('firstName')?.touched
+              }"
+            />
+            <!-- Validators for firstName -->
+            <div
+              *ngIf="contactForm.get('firstName')?.touched"
+              class="error-label fade-in"
+            >
+              <span
+                *ngIf="contactForm.get('firstName')?.hasError('required')"
+                class="text-danger"
               >
-                <span
-                  *ngIf="contactForm.get('firstName')?.hasError('required')"
-                  class="text-danger"
-                >
-                  <i class="error-icon fa-solid fa-exclamation-circle"></i>
-                  Campo
-                  <strong>requerido</strong>
-                </span>
-                <span
-                  *ngIf="contactForm.get('firstName')?.hasError('minlength')"
-                  class="text-warning"
-                >
-                  <i class="error-icon fa-solid fa-exclamation-triangle"></i>
-                  Este campo tiene que tener mínimo
-                  <strong>4 caracteres</strong>
-                </span>
-              </div>
-              <!-- end of validators -->
-            </div>
-            <div class="col">
-              <input
-                type="text"
-                formControlName="lastName"
-                class="form-control"
-                placeholder="Apellido"
-                [ngClass]="{
-                  'error-input':
-                    contactForm.get('lastName')?.invalid &&
-                    contactForm.get('lastName')?.touched
-                }"
-              />
-              <div
-                *ngIf="contactForm.get('lastName')?.touched"
-                class="error-label fade-in"
+                <i class="error-icon fa-solid fa-exclamation-circle"></i>
+                Campo
+                <strong>requerido</strong>
+              </span>
+              <span
+                *ngIf="contactForm.get('firstName')?.hasError('minlength')"
+                class="text-warning"
               >
-                <span
-                  *ngIf="contactForm.get('lastName')?.hasError('required')"
-                  class="text-danger"
-                >
-                  <i class="error-icon fa-solid fa-exclamation-circle"></i>
-                  Campo
-                  <strong>requerido</strong>
-                </span>
-                <span
-                  *ngIf="contactForm.get('lastName')?.hasError('minlength')"
-                  class="text-warning"
-                >
-                  <i class="error-icon fa-solid fa-exclamation-triangle"></i>
-                  Este campo tiene que tener mínimo
-                  <strong>4 caracteres</strong>
-                </span>
-              </div>
+                <i class="error-icon fa-solid fa-exclamation-triangle"></i>
+                Este campo tiene que tener mínimo
+                <strong>4 caracteres</strong>
+              </span>
             </div>
           </div>
-          <div class="row mt-3">
-            <div class="col">
-              <input
-                type="email"
-                formControlName="email"
-                class="form-control"
-                placeholder="Correo electrónico"
-                [ngClass]="{
-                  'error-input':
-                    contactForm.get('email')?.invalid &&
-                    contactForm.get('email')?.touched
-                }"
-              />
-              <div
-                *ngIf="contactForm.get('email')?.touched"
-                class="error-label fade-in"
+          <div class="mb-3">
+            <input
+              type="text"
+              formControlName="lastName"
+              class="form-control"
+              placeholder="Apellido"
+              [ngClass]="{
+                'error-input':
+                  contactForm.get('lastName')?.invalid &&
+                  contactForm.get('lastName')?.touched
+              }"
+            />
+            <!-- Validators for lastName -->
+            <div
+              *ngIf="contactForm.get('lastName')?.touched"
+              class="error-label fade-in"
+            >
+              <span
+                *ngIf="contactForm.get('lastName')?.hasError('required')"
+                class="text-danger"
               >
-                <span
-                  *ngIf="contactForm.get('email')?.hasError('required')"
-                  class="text-danger"
-                >
-                  <i class="error-icon fa-solid fa-exclamation-circle"></i>
-                  Campo
-                  <strong>requerido</strong>
-                </span>
-                <span
-                  *ngIf="contactForm.get('email')?.hasError('email')"
-                  class="text-warning"
-                >
-                  <i class="error-icon fa-solid fa-exclamation-triangle"></i>
-                  correo
-                  <strong>no valido</strong>
-                </span>
-              </div>
-            </div>
-            <div class="col">
-              <input
-                type="text"
-                formControlName="phone"
-                class="form-control"
-                placeholder="Número de teléfono"
-                [ngClass]="{
-                  'error-input':
-                    contactForm.get('phone')?.invalid &&
-                    contactForm.get('phone')?.touched
-                }"
-              />
-              <div
-                *ngIf="contactForm.get('phone')?.touched"
-                class="error-label fade-in"
+                <i class="error-icon fa-solid fa-exclamation-circle"></i>
+                Campo
+                <strong>requerido</strong>
+              </span>
+              <span
+                *ngIf="contactForm.get('lastName')?.hasError('minlength')"
+                class="text-warning"
               >
-                <span
-                  *ngIf="contactForm.get('phone')?.hasError('required')"
-                  class="text-danger"
-                >
-                  <i class="error-icon fa-solid fa-exclamation-circle"></i>
-                  Campo
-                  <strong>requerido</strong>
-                </span>
-                <span
-                  *ngIf="contactForm.get('phone')?.hasError('minlength')"
-                  class="text-warning"
-                >
-                  <i class="error-icon fa-solid fa-exclamation-triangle"></i>
-                  Este campo tiene que tener mínimo
-                  <strong>9 caracteres</strong>
-                </span>
-              </div>
+                <i class="error-icon fa-solid fa-exclamation-triangle"></i>
+                Este campo tiene que tener mínimo
+                <strong>4 caracteres</strong>
+              </span>
             </div>
           </div>
-          <div class="row mt-3">
-            <div class="col">
-              <label for="dropdown">¿QUE CLASE QUIERES PROBAR?</label>
-              <select
-                formControlName="dropdown"
-                id="dropdown"
-                class="form-select"
+          <div class="mb-3">
+            <input
+              type="email"
+              formControlName="email"
+              class="form-control"
+              placeholder="Correo electrónico"
+              [ngClass]="{
+                'error-input':
+                  contactForm.get('email')?.invalid &&
+                  contactForm.get('email')?.touched
+              }"
+            />
+            <!-- Validators for email -->
+            <div
+              *ngIf="contactForm.get('email')?.touched"
+              class="error-label fade-in"
+            >
+              <span
+                *ngIf="contactForm.get('email')?.hasError('required')"
+                class="text-danger"
               >
-                <option value="" disabled selected>Seleccionar</option>
-                <option value="Crossfit">Crossfit</option>
-                <option value="StrengthConditioning ">
-                  Strength and Conditioning
-                </option>
-                <option value="Halterofilia">Halterofilia</option>
-                <option value="Gymnastics">Gymnastics</option>
-                <option value="Endurance">Endurance</option>
-                <option value="Basics">Basics</option>
-                <option value="Mobility">Mobility</option>
-                <option value="Pilates">Pilates HIIT</option>
-                <option value="Pilates">Kids</option>
-              </select>
-              <div
-                *ngIf="contactForm.get('dropdown')?.touched"
-                class="error-label fade-in"
+                <i class="error-icon fa-solid fa-exclamation-circle"></i>
+                Campo
+                <strong>requerido</strong>
+              </span>
+              <span
+                *ngIf="contactForm.get('email')?.hasError('email')"
+                class="text-warning"
               >
-                <span
-                  *ngIf="contactForm.get('dropdown')?.hasError('required')"
-                  class="text-danger"
-                >
-                  <i class="error-icon fa-solid fa-exclamation-circle"></i>
-                  Campo
-                  <strong>requerido</strong>
-                </span>
-              </div>
+                <i class="error-icon fa-solid fa-exclamation-triangle"></i>
+                correo
+                <strong>no valido</strong>
+              </span>
             </div>
           </div>
-          <div class="container mt-3">
-            <label for="radioButtons">EXPERIENCIA PREVIA</label>
+          <div class="mb-3">
+            <input
+              type="text"
+              formControlName="phone"
+              class="form-control"
+              placeholder="Número de teléfono"
+              [ngClass]="{
+                'error-input':
+                  contactForm.get('phone')?.invalid &&
+                  contactForm.get('phone')?.touched
+              }"
+            />
+            <!-- Validators for phone -->
+            <div
+              *ngIf="contactForm.get('phone')?.touched"
+              class="error-label fade-in"
+            >
+              <span
+                *ngIf="contactForm.get('phone')?.hasError('required')"
+                class="text-danger"
+              >
+                <i class="error-icon fa-solid fa-exclamation-circle"></i>
+                Campo
+                <strong>requerido</strong>
+              </span>
+              <span
+                *ngIf="contactForm.get('phone')?.hasError('minlength')"
+                class="text-warning"
+              >
+                <i class="error-icon fa-solid fa-exclamation-triangle"></i>
+                Este campo tiene que tener mínimo
+                <strong>9 caracteres</strong>
+              </span>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="dropdown" class="mb-2"
+              >¿QUE CLASE QUIERES PROBAR?</label
+            >
+            <select
+              formControlName="dropdown"
+              id="dropdown"
+              class="form-select"
+            >
+              <option value="" disabled selected>Seleccionar</option>
+              <option value="Crossfit">Crossfit</option>
+              <option value="StrengthConditioning ">
+                Strength and Conditioning
+              </option>
+              <option value="Halterofilia">Halterofilia</option>
+              <option value="Gymnastics">Gymnastics</option>
+              <option value="Endurance">Endurance</option>
+              <option value="Basics">Basics</option>
+              <option value="Mobility">Mobility</option>
+              <option value="Pilates">Pilates HIIT</option>
+              <option value="Pilates">Kids</option>
+            </select>
+            <!-- Validators for dropdown -->
+            <div
+              *ngIf="contactForm.get('dropdown')?.touched"
+              class="error-label fade-in"
+            >
+              <span
+                *ngIf="contactForm.get('dropdown')?.hasError('required')"
+                class="text-danger"
+              >
+                <i class="error-icon fa-solid fa-exclamation-circle"></i>
+                Campo
+                <strong>requerido</strong>
+              </span>
+            </div>
+          </div>
+          <div class="mb-3"> <div class="radio-buttons-container">
+            <label for="radioButtons" >EXPERIENCIA PREVIA</label>
             <div class="form-check" id="radioButtons">
               <input
                 class="form-check-input"
@@ -237,50 +237,65 @@
               >
             </div>
           </div>
-          <div class="row mt-3">
-            <div class="col">
-              <label for="textBox"
-                >¿QUÉ DÍA Y A QUÉ HORA QUIERES HACER LA PRUEBA?</label
+
+            <!-- Validators for radio buttons -->
+            <div
+              *ngIf="contactForm.get('experiencia')?.touched"
+              class="error-label fade-in"
+            >
+              <span
+                *ngIf="contactForm.get('experiencia')?.hasError('required')"
+                class="text-danger"
               >
-              <textarea
-                formControlName="textBox"
-                name="text"
-                id="textBox"
-                placeholder="indicar fecha y horario de la clase"
-                style="height: 50px; width: 100%; border-radius: 5px"
-                [ngClass]="{
-                  'error-input':
-                    contactForm.get('textBox')?.invalid &&
-                    contactForm.get('textBox')?.touched
-                }"
-              ></textarea>
-              <div
-                *ngIf="contactForm.get('textBox')?.touched"
-                class="error-label fade-in"
+                <i class="error-icon fa-solid fa-exclamation-circle"></i>
+                Campo
+                <strong>requerido</strong>
+              </span>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="textBox" class="mb-2"
+              >¿QUÉ DÍA Y A QUÉ HORA QUIERES HACER LA PRUEBA?</label
+            >
+            <textarea
+              formControlName="textBox"
+              name="text"
+              id="textBox"
+              placeholder="indicar fecha y horario de la clase"
+              style="height: 50px; width: 100%; border-radius: 5px"
+              [ngClass]="{
+                'error-input':
+                  contactForm.get('textBox')?.invalid &&
+                  contactForm.get('textBox')?.touched
+              }"
+            ></textarea>
+            <!-- Validators for textBox -->
+            <div
+              *ngIf="contactForm.get('textBox')?.touched"
+              class="error-label fade-in"
+            >
+              <span
+                *ngIf="contactForm.get('textBox')?.hasError('required')"
+                class="text-danger"
               >
-                <span
-                  *ngIf="contactForm.get('textBox')?.hasError('required')"
-                  class="text-danger"
-                >
-                  <i class="error-icon fa-solid fa-exclamation-circle"></i>
-                  Campo
-                  <strong>requerido</strong>
-                </span>
-                <span
-                  *ngIf="contactForm.get('textBox')?.hasError('minlength')"
-                  class="text-warning"
-                >
-                  <i class="error-icon fa-solid fa-exclamation-triangle"></i>
-                  Este campo tiene que tener mínimo
-                  <strong>9 caracteres</strong>
-                </span>
-              </div>
+                <i class="error-icon fa-solid fa-exclamation-circle"></i>
+                Campo
+                <strong>requerido</strong>
+              </span>
+              <span
+                *ngIf="contactForm.get('textBox')?.hasError('minlength')"
+                class="text-warning"
+              >
+                <i class="error-icon fa-solid fa-exclamation-triangle"></i>
+                Este campo tiene que tener mínimo
+                <strong>9 caracteres</strong>
+              </span>
             </div>
           </div>
           <div class="modal-footer">
             <button
               type="submit"
-              class="btn btn-success"
+              class="btn btn-success w-100"
               [disabled]="!contactForm.valid"
             >
               Enviar por WhatsApp
