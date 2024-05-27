@@ -45,7 +45,7 @@ export class ClientFormComponent {
       firstName: ['', [Validators.required, Validators.minLength(4)]],
       lastName: ['', [Validators.required, Validators.minLength(4)]],
       dob: ['', Validators.required],
-      passportNumber: ['', [Validators.required, Validators.minLength(8)]],
+      passportNumber: ['', [Validators.required, Validators.pattern(/^[0-9]{8}[A-Za-z]|^[XYZ][0-9]{7}[A-Za-z]$/)]], // Updated pattern validator
       phoneNumber: ['', [Validators.required, Validators.minLength(9),  Validators.pattern('^[0-9+]+$')]],
       email: ['', [Validators.required, Validators.email]],
       streetAddress: ['', [Validators.required, Validators.minLength(9)]],

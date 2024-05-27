@@ -117,8 +117,8 @@
     </div>
     <div class="col-md-6">
       <label for="passportNumber" class="form-label"
-        >DNI/NIE/PASAPORTE <span>*</span>
-      </label>
+        >DNI/NIE/PASAPORTE <span>*</span></label
+      >
       <input
         type="text"
         id="passportNumber"
@@ -142,14 +142,15 @@
           <strong>requerido</strong>
         </span>
         <span
-          *ngIf="contactForm.get('passportNumber')?.hasError('minlength')"
-          class="text-warning"
+          *ngIf="contactForm.get('passportNumber')?.hasError('pattern')"
+          class="text-danger"
         >
-          <i class="error-icon fa-solid fa-exclamation-triangle"></i> Este campo
-          tiene que tener mínimo <strong>8 caracteres</strong>
+          <i class="error-icon fa-solid fa-exclamation-circle"></i> DNI/NIE
+          <strong>no válido</strong>
         </span>
       </div>
     </div>
+
     <div class="col-md-6">
       <label for="phoneNumber" class="form-label"
         >Teléfono <span>*</span>
