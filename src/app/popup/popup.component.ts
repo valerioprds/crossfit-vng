@@ -24,7 +24,14 @@ export class PopupComponent {
       firstName: ['', [Validators.required, Validators.minLength(4)]],
       lastName: ['', [Validators.required, Validators.minLength(4)]],
       email: ['', [Validators.required, Validators.email]],
-      phone: ['', [Validators.required, Validators.minLength(9)]],
+      phone: [
+        '',
+        [
+          Validators.required,
+          Validators.minLength(9),
+          Validators.pattern('^[0-9+]+$'),
+        ],
+      ], // Added pattern validator
       dropdown: ['', Validators.required],
       experiencia: ['', Validators.required],
       textBox: ['', [Validators.required, Validators.minLength(9)]],
@@ -55,7 +62,7 @@ export class PopupComponent {
         - **Experiencia:** ${experienceMessage}
         - **fecha y hora:** ${textBox}`;
 
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=+34688467513&text=${encodeURIComponent(
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=+34634671046&text=${encodeURIComponent(
       message
     )}`;
     window.open(whatsappUrl, '_blank');
