@@ -31,6 +31,7 @@
         id="firstName"
         class="form-control"
         formControlName="firstName"
+        placeholder="Introduce tu nombre"
         [ngClass]="{
           'error-input':
             contactForm.get('firstName')?.invalid &&
@@ -65,6 +66,7 @@
         id="lastName"
         class="form-control"
         formControlName="lastName"
+        placeholder="Introduce tu apellido"
         [ngClass]="{
           'error-input':
             contactForm.get('lastName')?.invalid &&
@@ -124,6 +126,7 @@
         id="passportNumber"
         class="form-control"
         formControlName="passportNumber"
+        placeholder="introduce tu DNI/NIE o pasaporte"
         [ngClass]="{
           'error-input':
             contactForm.get('passportNumber')?.invalid &&
@@ -160,6 +163,7 @@
         id="phoneNumber"
         class="form-control"
         formControlName="phoneNumber"
+        placeholder="Introduce tu teléfono"
         [ngClass]="{
           'error-input':
             contactForm.get('phoneNumber')?.invalid &&
@@ -200,6 +204,7 @@
         id="email"
         class="form-control"
         formControlName="email"
+        placeholder="Introduce tu correo electrónico"
         [ngClass]="{
           'error-input':
             contactForm.get('email')?.invalid &&
@@ -235,6 +240,7 @@
         id="streetAddress"
         class="form-control"
         formControlName="streetAddress"
+        placeholder="Introduce tu dirección"
         [ngClass]="{
           'error-input':
             contactForm.get('streetAddress')?.invalid &&
@@ -270,6 +276,7 @@
         id="postCode"
         class="form-control"
         formControlName="postCode"
+        placeholder="Introduce to código postal"
         [ngClass]="{
           'error-input':
             contactForm.get('postCode')?.invalid &&
@@ -303,6 +310,7 @@
         id="city"
         class="form-control"
         formControlName="city"
+        placeholder="Ej: 'Vilanova', 'Sitges'..."
         [ngClass]="{
           'error-input':
             contactForm.get('city')?.invalid && contactForm.get('city')?.touched
