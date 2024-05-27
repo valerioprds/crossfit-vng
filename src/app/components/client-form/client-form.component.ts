@@ -46,7 +46,7 @@ export class ClientFormComponent {
       lastName: ['', [Validators.required, Validators.minLength(4)]],
       dob: ['', Validators.required],
       passportNumber: ['', [Validators.required, Validators.minLength(8)]],
-      phoneNumber: ['', [Validators.required, Validators.minLength(9)]],
+      phoneNumber: ['', [Validators.required, Validators.minLength(9),  Validators.pattern('^[0-9+]+$')]],
       email: ['', [Validators.required, Validators.email]],
       streetAddress: ['', [Validators.required, Validators.minLength(9)]],
       postCode: ['', [Validators.required, Validators.minLength(5)]],

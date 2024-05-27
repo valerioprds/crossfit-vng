@@ -183,6 +183,13 @@
           <i class="error-icon fa-solid fa-exclamation-triangle"></i> Este campo
           tiene que tener mínimo <strong>9 caracteres</strong>
         </span>
+        <span
+          *ngIf="contactForm.get('phoneNumber')?.hasError('pattern')"
+          class="text-danger"
+        >
+          <i class="error-icon fa-solid fa-exclamation-circle"></i>
+          Número de teléfono <strong>no válido</strong>
+        </span>
       </div>
     </div>
     <div class="col-md-6">
