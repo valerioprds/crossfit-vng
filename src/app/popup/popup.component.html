@@ -17,7 +17,6 @@
   aria-hidden="true"
 >
   <div class="modal-dialog">
-    <!-- Standard size for mobile-first approach -->
     <div class="modal-content">
       <div class="modal-header">
         <h2 class="modal-title fs-5" id="modalLable">CLASE DE PRUEBA</h2>
@@ -28,7 +27,6 @@
           aria-label="Close"
         ></button>
       </div>
-      <!-- Modal Body with Contact Form -->
       <div class="modal-body">
         <form [formGroup]="contactForm" (ngSubmit)="sendToWhatsApp()">
           <div class="mb-3">
@@ -43,7 +41,6 @@
                   contactForm.get('firstName')?.touched
               }"
             />
-            <!-- Validators for firstName -->
             <div
               *ngIf="contactForm.get('firstName')?.touched"
               class="error-label fade-in"
@@ -78,7 +75,6 @@
                   contactForm.get('lastName')?.touched
               }"
             />
-            <!-- Validators for lastName -->
             <div
               *ngIf="contactForm.get('lastName')?.touched"
               class="error-label fade-in"
@@ -113,7 +109,6 @@
                   contactForm.get('email')?.touched
               }"
             />
-            <!-- Validators for email -->
             <div
               *ngIf="contactForm.get('email')?.touched"
               class="error-label fade-in"
@@ -148,7 +143,6 @@
                   contactForm.get('phone')?.touched
               }"
             />
-            <!-- Validators for phone -->
             <div
               *ngIf="contactForm.get('phone')?.touched"
               class="error-label fade-in"
@@ -189,7 +183,7 @@
             >
               <option value="" disabled selected>Seleccionar</option>
               <option value="Crossfit">Crossfit</option>
-              <option value="StrengthConditioning ">
+              <option value="StrengthConditioning">
                 Strength and Conditioning
               </option>
               <option value="Halterofilia">Halterofilia</option>
@@ -200,7 +194,6 @@
               <option value="Pilates">Pilates HIIT</option>
               <option value="Pilates">Kids</option>
             </select>
-            <!-- Validators for dropdown -->
             <div
               *ngIf="contactForm.get('dropdown')?.touched"
               class="error-label fade-in"
@@ -245,8 +238,6 @@
                 >
               </div>
             </div>
-
-            <!-- Validators for radio buttons -->
             <div
               *ngIf="contactForm.get('experiencia')?.touched"
               class="error-label fade-in"
@@ -262,41 +253,31 @@
             </div>
           </div>
           <div class="mb-3">
-            <label for="textBox" class="mb-2"
-              >¿QUÉ DÍA Y A QUÉ HORA QUIERES HACER LA PRUEBA?</label
+            <label for="datetimeInput" class="mb-2"
+              >¿CUÁNDO QUIERES HACER LA PRUEBA?</label
             >
-            <textarea
-              formControlName="textBox"
-              name="text"
-              id="textBox"
-              placeholder="indicar fecha y horario de la clase"
-              style="height: 50px; width: 100%; border-radius: 5px"
+            <input
+              type="datetime-local"
+              formControlName="datetimeInput"
+              class="form-control"
+              id="datetimeInput"
               [ngClass]="{
                 'error-input':
-                  contactForm.get('textBox')?.invalid &&
-                  contactForm.get('textBox')?.touched
+                  contactForm.get('datetimeInput')?.invalid &&
+                  contactForm.get('datetimeInput')?.touched
               }"
-            ></textarea>
-            <!-- Validators for textBox -->
+            />
             <div
-              *ngIf="contactForm.get('textBox')?.touched"
+              *ngIf="contactForm.get('datetimeInput')?.touched"
               class="error-label fade-in"
             >
               <span
-                *ngIf="contactForm.get('textBox')?.hasError('required')"
+                *ngIf="contactForm.get('datetimeInput')?.hasError('required')"
                 class="text-danger"
               >
                 <i class="error-icon fa-solid fa-exclamation-circle"></i>
                 Campo
                 <strong>requerido</strong>
-              </span>
-              <span
-                *ngIf="contactForm.get('textBox')?.hasError('minlength')"
-                class="text-warning"
-              >
-                <i class="error-icon fa-solid fa-exclamation-triangle"></i>
-                Este campo tiene que tener mínimo
-                <strong>9 caracteres</strong>
               </span>
             </div>
           </div>

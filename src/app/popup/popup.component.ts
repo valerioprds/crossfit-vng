@@ -34,7 +34,7 @@ export class PopupComponent {
       ], // Added pattern validator
       dropdown: ['', Validators.required],
       experiencia: ['', Validators.required],
-      textBox: ['', [Validators.required, Validators.minLength(9)]],
+      datetimeInput: ['', Validators.required]
     });
   }
 
@@ -46,7 +46,7 @@ export class PopupComponent {
       phone,
       dropdown,
       experiencia,
-      textBox,
+      datetimeInput,
     } = this.contactForm.value;
     const experienceMessage =
       experiencia === 'sinExperiencia'
@@ -60,9 +60,9 @@ export class PopupComponent {
         - **Teléfono:** ${phone}
         - **Quiero probar:** ${dropdown}
         - **Experiencia:** ${experienceMessage}
-        - **fecha y hora:** ${textBox}`;
+        - **fecha y hora:** ${datetimeInput}`;
 
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=+34634671046&text=${encodeURIComponent(
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=+34673597175&text=${encodeURIComponent(
       message
     )}`;
     window.open(whatsappUrl, '_blank');
